@@ -6,7 +6,8 @@ const App = () => {
   const breakpoint = useBreakpoint();
 
   return <div>
-    <h2>Hello!</h2>
+    <h2 className='h1'>Hello!</h2>
+    <h2 className='h2'>Hello!</h2>
   </div>;
 }
 

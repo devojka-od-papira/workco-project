@@ -1,44 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-.h1{
-  font-family: 'Noto Serif', serif;
-  font-size: 48px;
-  font-weight: bold;
+@mixin noto-font{
+  font-family: 'Noto';
+  font-style: normal;
+  font-stretch: normal;
 }
 
-.h2{
-  font-family: 'Noto Serif', serif;
-  font-size: 47px;
-  font-weight: normal;
+@mixin roboto-font{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-stretch: normal;
 }
 
-.h3{
-  font-family: 'Noto Serif', serif;
-  font-size: 28px;
-  font-weight: bold;
-}
+@font-face {
+  @include noto-font;
+   src: url("assets/fonts/Noto_Serif/NotoSerif-Regular.ttf") format("truetype");
+   font-weight: normal;
+ }
 
-.h4{
-  font-family: 'Noto Serif', serif;
-  font-size: 24px;
-  font-weight: normal;
-}
+ @font-face {
+   @include noto-font;
+   src: url("assets/fonts/Noto_Serif/NotoSerif-Regular.ttf") format("truetype");
+   font-weight: bold;
+ }
 
-.h5{
-  font-family: 'Noto Serif', serif;
-  font-size: 20px;
-  font-weight: bold;
-}
+ @font-face {
+@include roboto-font;
+    src: url("assets/fonts/Roboto/Roboto-Black.ttf") format("truetype");
+    font-weight: normal;
 
-.h6{
-  font-family: 'Noto Serif', serif;
-  font-size: 20px;
-  font-weight: normal;
-}
+ }
 
-.p{
-  font-family: font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  font-weight: normal;
-}
+ @font-face {
+   @include roboto-font;
+   src: url("assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+   font-weight: bold;
+ }
+
+
