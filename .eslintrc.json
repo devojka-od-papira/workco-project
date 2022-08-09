@@ -21,13 +21,14 @@
     ],
     "rules": {
         "react/jsx-filename-extension": [1,
-            { "extensions": [".js", ".jsx"] }
+            { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
         ],
         "comma-dangle": "off",
         "react/jsx-boolean-value": "off",
         "import/extensions": "off",
         "import/no-unresolved": "off",
         "react/react-in-jsx-scope": "off",
-        "no-use-before-define": "off"
+        "no-use-before-define": "off",
+        "import/prefer-default-export": "off"
     }
 }
