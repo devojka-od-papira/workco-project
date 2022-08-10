@@ -7,7 +7,7 @@ interface ContainerProps {
 
 function Container({ children } :ContainerProps) {
   return (
-    <div>{children}</div>
+    <div className='container'>{children}</div>
   );
 }
 
