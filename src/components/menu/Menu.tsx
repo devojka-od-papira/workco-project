@@ -1,5 +1,5 @@
 import React from 'react';
-import './Menu.module.scss';
+import styles from './Menu.module.scss';
 
 type MenuTypes = {
   title: string;
@@ -11,11 +11,11 @@ interface MenuProps {
 }
 
 const Menu = ({ menu }: MenuProps) => (
-  <ul>
-    {menu.map((menuItem, index) => {
-      return <li className='menuItem primary-font' key={index}>{menuItem.title}</li>;
-    })}
+  <ul className={styles.ul}>
+    {menu.map((menuItem) => (
+      <li className={styles.menuItem} key={menuItem.title}>{menuItem.title}</li>
+    ))}
   </ul>
-)
+);
 
 export default Menu;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Container.module.scss';
+import styles from './Container.module.scss';
 
 interface ContainerProps {
   children: any
@@ -7,7 +7,7 @@ interface ContainerProps {
 
 function Container({ children } :ContainerProps) {
   return (
-    <div className='container'>{children}</div>
+    <div className={styles.container}>{children}</div>
   );
 }
 

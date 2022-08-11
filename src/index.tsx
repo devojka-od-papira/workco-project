@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { GridSystem } from 'light-react-grid';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './main.scss';
+import './assets/styles/main.scss'
 import { gridSettings } from './constants';
 
 ReactDOM.render(

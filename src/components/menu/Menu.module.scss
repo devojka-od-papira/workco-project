@@ -1,3 +1,14 @@
+@import "../../assets/styles/typography.scss";
+
 .menuItem{
+  @include noto-font;
   font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  //text-transform: uppercase;
+  //padding-right: 5px;
+}
+.ul{
+  display: flex;
+  justify-content: space-between;
 }

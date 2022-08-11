@@ -1,7 +1,8 @@
 import React from 'react';
 import { Column, Grid } from 'light-react-grid';
 import Menu from '../menu/Menu';
-import './Header.module.scss';
+import Logo from '../logo/Logo';
+import styles from './Header.module.scss';
 
 function Header() {
   const menu = [
@@ -27,10 +28,10 @@ function Header() {
     },
   ];
   return (
-    <Grid>
-      <Column size={{ lg: 3 }}>1</Column>
+    <Grid className={styles.heared}>
+      <Column size={{ lg: 3 }}><Logo /></Column>
       <Column size={{ lg: 5 }}><Menu menu={menu} /></Column>
-      <Column size={{ lg: 4 }}>3</Column>
+      <Column size={{ lg: 4 }} />
     </Grid>
   );
 }
