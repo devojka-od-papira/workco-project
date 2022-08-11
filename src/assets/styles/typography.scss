@@ -1,60 +1,33 @@
-@mixin noto-font{
-  font-family: Noto, serif;
+@mixin noto-font {
+  font-family: 'Noto Serif', serif;
   font-style: normal;
   font-stretch: normal;
 }
 
-@mixin roboto-font{
-  font-family: Roboto, serif;
+@mixin roboto-font {
+  font-family: 'Roboto', serif;
   font-style: normal;
   font-stretch: normal;
 }
 
 // Noto Sarif Normal
-
 @font-face {
-  @include noto-font;
-
-   src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf") format("truetype");
-   font-weight: normal;
- }
-
-@font-face {
-  @include noto-font;
-
-  src: url("../fonts/Noto_Serif/NotoSerif-Regular.otf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  @include noto-font;
-
-  src: url("../fonts/Noto_Serif/NotoSerif-Regular.woff") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  @include noto-font;
-
-  src: url("../fonts/Noto_Serif/NotoSerif-Regular.woff2") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  @include noto-font;
-
-  src: url("../fonts/Noto_Serif/NotoSerif-Regular.eot") format("truetype");
-  font-weight: normal;
+  font-family: 'Noto Serif';
+  src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf") format("ttf"),
+  url("../fonts/Noto_Serif/NotoSerif-Regular.otf") format("otf"),
+  url("../fonts/Noto_Serif/NotoSerif-Regular.woff") format("woff"),
+  url("../fonts/Noto_Serif/NotoSerif-Regular.woff2") format("woff2"),
+  url("../fonts/Noto_Serif/NotoSerif-Regular.eot") format("eot");
 }
 
 // Noto Sarif Bold
 
- @font-face {
-   @include noto-font;
+@font-face {
+  @include noto-font;
 
-   src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf") format("truetype");
-   font-weight: bold;
- }
+  src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
 
 @font-face {
   @include noto-font;
@@ -123,12 +96,12 @@
 
 // Roboto Bold
 
- @font-face {
-   @include roboto-font;
+@font-face {
+  @include roboto-font;
 
-   src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-   font-weight: bold;
- }
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
 
 @font-face {
   @include roboto-font;
