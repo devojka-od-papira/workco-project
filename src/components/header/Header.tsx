@@ -1,10 +1,11 @@
 import React from 'react';
-import { Column, Grid } from 'light-react-grid';
+import { Column, Grid, useBreakpoint } from 'light-react-grid';
 import Menu from '../menu/Menu';
 import Logo from '../logo/Logo';
 import styles from './Header.module.scss';
 
 function Header() {
+  const breakpoint = useBreakpoint();
   const menu = [
     {
       title: 'Home',
@@ -28,10 +29,12 @@ function Header() {
     },
   ];
   return (
-    <Grid className={styles.heared}>
-      <Column size={{ lg: 3 }}><Logo /></Column>
-      <Column size={{ lg: 5 }}><Menu menu={menu} /></Column>
-      <Column size={{ lg: 4 }} />
+    <Grid className={styles.header}>
+      <Column size={{ sm: 1, md: 2, lg: 2 }}>
+        <Logo />
+      </Column>
+      {breakpoint === 'lg' && <Column size={{ lg: 1 }} />}
+      <Column className={styles.menuWrapper} size={{ md: 6, lg: 5 }}><Menu menu={menu} /></Column>
     </Grid>
   );
 }
