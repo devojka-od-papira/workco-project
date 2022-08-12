@@ -1,39 +1,120 @@
-.h1{
-  font-size: 48px;
+
+
+// Noto Sarif Normal
+@font-face {
+  font-family: 'Noto Serif';
+  src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf") format("ttf"),
+  url("../fonts/Noto_Serif/NotoSerif-Regular.otf") format("otf"),
+  url("../fonts/Noto_Serif/NotoSerif-Regular.woff") format("woff"),
+  url("../fonts/Noto_Serif/NotoSerif-Regular.woff2") format("woff2"),
+  url("../fonts/Noto_Serif/NotoSerif-Regular.eot") format("eot");
 }
 
-.h2{
-  font-size: 47px;
-}
-
-.h3{
-  font-size: 28px;
-}
-
-.h4{
-  font-size: 24px;
-}
-
-.h5{
-  font-size: 20px;
-}
-
-.h6{
-  font-size: 20px;
-}
-
-.p {
-  font-size: 22px;
-}
-
-.bold{
+// Noto Sarif Bold
+@font-face {
+  font-family: 'Noto Serif';
+  src: url("../fonts/Noto_Serif/NotoSerif-Bold.ttf") format("truetype");
   font-weight: bold;
 }
-
-.primary-font{
-  font-family: Noto, serif;
-}
-
-.secondary-font{
-  font-family: Roboto, serif;
-}
+//
+//@font-face {
+//  @include noto-font;
+//
+//  src: url("../fonts/Noto_Serif/NotoSerif-Bold.otf") format("truetype");
+//  font-weight: bold;
+//}
+//
+//@font-face {
+//  @include noto-font;
+//
+//  src: url("../fonts/Noto_Serif/NotoSerif-Bold.woff") format("truetype");
+//  font-weight: bold;
+//}
+//
+//@font-face {
+//  @include noto-font;
+//
+//  src: url("../fonts/Noto_Serif/NotoSerif-Bold.woff2") format("truetype");
+//  font-weight: bold;
+//}
+//
+//@font-face {
+//  @include noto-font;
+//
+//  src: url("../fonts/Noto_Serif/NotoSerif-Bold.eot") format("truetype");
+//  font-weight: bold;
+//}
+//
+//// Roboto Normal
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Regular.eot") format("truetype");
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Regular.otf") format("truetype");
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Regular.woff") format("truetype");
+//  font-weight: normal;
+//}
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("truetype");
+//  font-weight: normal;
+//}
+//
+//// Roboto Bold
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+//  font-weight: bold;
+//}
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Bold.eot") format("truetype");
+//  font-weight: bold;
+//}
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Bold.otf") format("truetype");
+//  font-weight: bold;
+//}
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Bold.woff") format("truetype");
+//  font-weight: bold;
+//}
+//
+//@font-face {
+//  @include roboto-font;
+//
+//  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("truetype");
+//  font-weight: bold;
+//}

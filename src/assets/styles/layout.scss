@@ -1,0 +1,35 @@
+@mixin breakpoint($point) {
+  @if $point==desktop {
+    @media (min-width: 901px) {
+      @content;
+    }
+  } @else if $point==tablet {
+    @media (min-width: 601px) {
+      @content;
+    }
+  } @else if $point==tabletOnly {
+    @media (min-width: 601px) and (max-width: 900px) {
+      @content;
+    }
+  } @else if $point==mobileonly {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}
+
+/**
+h1 {
+  font-size: 30px;
+  padding: 40px;
+
+  @include breakpoint(mobileOnly) {
+    font-size: 20px;
+  }
+
+  @include breakpoint(tablet) {
+    font-size: 26px;
+    padding: 60px;
+  }
+}
+**/

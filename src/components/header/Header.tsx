@@ -1,6 +1,6 @@
 import React from 'react';
 import { Column, Grid, useBreakpoint } from 'light-react-grid';
-import Menu from '../menu/Menu';
+import Menu from '../menu';
 import Logo from '../logo/Logo';
 import styles from './Header.module.scss';
 
