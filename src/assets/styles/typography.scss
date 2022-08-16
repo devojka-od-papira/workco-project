@@ -7,16 +7,81 @@
 }
 
 @mixin roboto-font {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto Serif', serif;
   font-style: normal;
   font-stretch: normal;
 }
 
-@mixin Heading1 {
-  @include noto-font;
-  font-size: 40px;
-
-  @include breakpoint(tabletOnly) {
-    font-size: 10px;
-  }
+@mixin noto-font-bold {
+  font-family: 'Noto Serif Bold', serif;
+  font-style: normal;
+  font-stretch: normal;
 }
+
+@mixin roboto-font-bold {
+  font-family: "Noto Serif Bold", serif;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@mixin h1 {
+  
+  @include noto-font-bold;
+
+  font-size: 48px;
+  font-weight: bold;
+}
+
+@mixin h2 {
+
+  @include noto-font-bold;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@mixin h3 {
+
+  @include noto-font;
+
+  font-size: 24px;
+  font-weight: normal;
+}
+
+@mixin h4 {
+
+  @include roboto-font;
+
+  font-size: 22px;
+  font-weight: normal;
+
+}
+
+@mixin h5 {
+
+  @include noto-font-bold;
+
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+@mixin h6 {
+
+  @include noto-font;
+
+  font-size: 20px;
+  font-weight: normal;
+
+}
+
+//@mixin Heading1 {
+//
+//  @include noto-font;
+//
+//  font-size: 40px;
+//
+//  @include breakpoint(tabletOnly) {
+//    font-size: 10px;
+//  }
+//}

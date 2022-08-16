@@ -10,10 +10,12 @@ interface MenuProps {
   menu: MenuTypes[];
 }
 
-const Menu = ({ menu }: MenuProps) => (
+const Menu: React.FC<MenuProps> = ({ menu }) => (
   <ul className={styles.ul}>
     {menu.map((menuItem) => (
-      <li className={styles.menuItem} key={menuItem.title}>{menuItem.title}</li>
+      <li className={styles.menuItem} key={menuItem.title}>
+        {menuItem.title}
+      </li>
     ))}
   </ul>
 );

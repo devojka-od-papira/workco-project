@@ -17,16 +17,16 @@ export const gridSettings: GridSettings = {
       columns: 12,
       gutterSize: 10,
       minWidth: 901,
-    }
+    },
   },
   gridHelperColumnColor: 'rgba(0, 0, 0, .05)',
   gridHelperMargins: {
-    sm: '5%',
-    md: '5%',
-    lg: '5%',
+    sm: '2%',
+    md: '4%',
+    lg: '7%',
   },
   prefixes: {
     grid: 'g',
     gridColumn: 'gc',
-  }
+  },
 };

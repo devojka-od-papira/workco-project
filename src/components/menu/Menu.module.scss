@@ -1,14 +1,35 @@
 @import "src/assets/styles/typography";
 
-.menuItem{
-  @include noto-font;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: normal;
-  text-transform: uppercase;
-}
+.ul {
+  @include breakpoint(mobileOnly) {
+    display: block;
+    flex-direction: column;
+  }
 
-.ul{
+  @include breakpoint(tabletOnly) {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 64px);
+    margin-left: 64px;
+  }
+
+  @include breakpoint(desktop) {
   display: flex;
   justify-content: space-between;
+
+  }
+
+  .menuItem {
+    @include h3;
+
+    text-transform: uppercase;
+
+    @include breakpoint(tabletOnly) {
+
+      @include h6;
+
+    }
+  }
+
+
 }
