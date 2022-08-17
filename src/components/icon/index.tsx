@@ -8,7 +8,7 @@ export interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ icon, onClick }) => (
-  <div onKeyDown={onClick} onClick={() => onClick()} role="button" tabIndex={0}>
+  <div onClick={onClick}>
     <img className={styles.icon} src={icon} alt="" />
   </div>
 );

@@ -36,13 +36,15 @@ function Header() {
   return (
     <Container>
       <Grid
-        className={`${styles.header} ${!mobileMenuOpen ? styles.divider : ''}`}
+        className={`${styles.header} ${
+          !mobileMenuOpen && breakpoint === 'sm' ? styles.divider : ''
+        }`}
       >
         <Column size={{ sm: 1, md: 2, lg: 2 }}>
           <Logo />
         </Column>
         <Column
-          className={styles.menuMobileWrapper}
+          className={`${styles.menuMobileWrapper}`}
           size={{ sm: 3, md: 6, lg: 5 }}
           offsetLeft={{ lg: 1 }}
         >
