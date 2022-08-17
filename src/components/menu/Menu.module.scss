@@ -4,6 +4,7 @@
   @include breakpoint(mobileOnly) {
     display: block;
     flex-direction: column;
+    margin-top: 57px;
   }
 
   @include breakpoint(tabletOnly) {
@@ -14,8 +15,8 @@
   }
 
   @include breakpoint(desktop) {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
   }
 
@@ -23,6 +24,10 @@
     @include h3;
 
     text-transform: uppercase;
+
+    @include  breakpoint(mobileOnly) {
+      margin: 10px 0;
+    }
 
     @include breakpoint(tabletOnly) {
 

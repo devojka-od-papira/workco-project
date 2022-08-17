@@ -1,7 +1,7 @@
 @import 'src/assets/styles/layout';
 
 .container {
-  @include breakpoint(mobilOnly) {
+  @include breakpoint(mobileOnly) {
     margin: 0 2%;
   }
 

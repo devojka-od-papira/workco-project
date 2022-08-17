@@ -1,6 +1,42 @@
+@import "src/assets/styles/layout";
+
 .header {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 100px;
+  @include breakpoint(mobileOnly) {
+    height: 50px;
+    align-items: center;
+
+    .divider {
+      box-shadow: 0 3px 2px -2px #666;
+      position: absolute;
+      right: 0;
+      left: 0;
+      box-sizing: border-box;
+      padding: 2%;
+      background-color: blueviolet;
+    }
+
+    .menuMobileWrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .menuPosition {
+     position: absolute;
+      left: 2%;
+    }
+  }
+
+  @include breakpoint(tabletOnly) {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  @include breakpoint(desktop) {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 100px;
+  }
 }
+
 
