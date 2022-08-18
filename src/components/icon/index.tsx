@@ -4,13 +4,13 @@ import styles from './Icon.module.scss';
 
 export interface IconProps {
   icon: string;
-  onClick: any;
+  onClick: () => void;
 }
 
 const Icon: React.FC<IconProps> = ({ icon, onClick }) => (
-  <div onClick={onClick}>
+  <button onClick={onClick}>
     <img className={styles.icon} src={icon} alt="" />
-  </div>
+  </button>
 );
 
 export default Icon;

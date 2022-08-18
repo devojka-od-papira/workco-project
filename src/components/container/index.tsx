@@ -2,11 +2,7 @@ import React from 'react';
 
 import styles from './Container.module.scss';
 
-export interface ContainerProps {
-  children: any;
-}
-
-const Container: React.FC<ContainerProps> = ({ children }) => (
+const Container: React.FC = ({ children }) => (
   <div className={styles.container}>{children}</div>
 );
 

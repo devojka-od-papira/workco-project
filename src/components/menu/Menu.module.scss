@@ -19,22 +19,20 @@
     justify-content: space-between;
 
   }
+}
 
-  .menuItem {
-    @include h3;
+.menuItem {
+  @include h3;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    @include  breakpoint(mobileOnly) {
-      margin: 10px 0;
-    }
-
-    @include breakpoint(tabletOnly) {
-
-      @include h6;
-
-    }
+  @include  breakpoint(mobileOnly) {
+    margin: 10px 0;
   }
 
+  @include breakpoint(tabletOnly) {
 
+    @include h6;
+
+  }
 }
