@@ -1,0 +1,15 @@
+@import "src/assets/styles/typography";
+
+.section {
+  margin-bottom: 50px;
+}
+
+.moreNews {
+  color: #191919;
+  @include h3;
+
+}
+
+.moreNewsWrapper {
+  margin-top: 41px;
+}
