@@ -1,0 +1,26 @@
+@import "src/assets/styles/typography";
+
+.no_content {
+  height: 268px;
+  background-color: #F8F8F8;
+}
+
+.content {
+  height: 426px;
+  background-color: #414141;
+  box-sizing: border-box;
+  padding-top: 94px;
+}
+
+.title {
+  color: #fff;
+  margin-bottom: 6px;
+  @include h7;
+
+}
+
+.description {
+  color: #fff;
+  @include h3;
+
+}

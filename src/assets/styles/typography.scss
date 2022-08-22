@@ -79,3 +79,9 @@
   font-weight: 400;
 
 }
+@mixin h7 {
+  @include noto-font;
+
+  font-size: 47px;
+  font-weight: normal;
+}
