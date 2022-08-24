@@ -21,10 +21,13 @@
     display: flex;
     justify-content: space-between;
 
+    li {
+      margin: 0 9px;
+    }
   }
 }
 
-.menuItem {
+.menu_item {
   @include h3;
 
   text-transform: uppercase;
@@ -38,4 +41,9 @@
     @include h6;
 
   }
+}
+
+.menu_position {
+  position: absolute;
+  left: 2%;
 }

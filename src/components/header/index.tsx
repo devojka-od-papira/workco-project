@@ -44,21 +44,18 @@ function Header() {
         })}
       >
         <Column
-          className={cx({ menuOpen: mobileMenuOpen })}
+          className={cx({ menu_open: mobileMenuOpen })}
           size={{ sm: 1, md: 2, lg: 2 }}
         >
           <Logo mobileMenuOpen={mobileMenuOpen} />
         </Column>
         <Column
-          className={cx(styles.menuMobileWrapper)}
+          className={cx({ menu_mobile_wrapper: true })}
           size={{ sm: 3, md: 6, lg: 5 }}
           offsetLeft={{ lg: 1 }}
         >
           {(mobileMenuOpen || breakpoint !== 'sm') && (
-            <Menu
-              className={cx({ menuPosition: mobileMenuOpen })}
-              menu={menu}
-            />
+            <Menu menu={menu} mobileMenuOpen={mobileMenuOpen} />
           )}
           {breakpoint === 'sm' && (
             <Icon

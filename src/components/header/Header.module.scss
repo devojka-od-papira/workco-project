@@ -6,16 +6,10 @@
     height: 50px;
     align-items: center;
 
-    .menuMobileWrapper {
+    .menu_mobile_wrapper {
       display: flex;
       justify-content: flex-end;
     }
-
-    .menuPosition {
-      position: absolute;
-      left: 2%;
-    }
-
   }
 
   @include breakpoint(tabletOnly) {
@@ -42,7 +36,7 @@
 
 }
 
-.menuOpen {
+.menu_open {
   padding-left: 11px !important;
   padding-right: 2px !important;
 }

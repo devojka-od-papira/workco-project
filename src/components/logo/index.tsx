@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({ mobileMenuOpen }) => {
     <div
       className={cx({
         logo: mobileMenuOpen,
-        menuClosed: !mobileMenuOpen,
+        logo_small: !mobileMenuOpen,
       })}
     />
   );

@@ -13,12 +13,12 @@ const Icon: React.FC<IconProps> = ({ icon, onClick, mobileMenuOpen }) => {
   return (
     <button
       className={cx({
-        menuOpen: mobileMenuOpen,
-        menuClosed: !mobileMenuOpen,
+        menu_button: true,
+        menu_closed: !mobileMenuOpen,
       })}
       onClick={onClick}
     >
-      <img src={icon} alt="" />
+      <img src={icon} alt="menu" />
     </button>
   );
 };
