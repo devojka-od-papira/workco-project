@@ -13,3 +13,17 @@
     height: 60px;
   }
 }
+
+.menuClosed {
+  width: 100%;
+  background-color: gray;
+  height: 103px;
+
+  @include breakpoint(mobileOnly) {
+    height: 31px;
+  }
+
+  @include breakpoint(tabletOnly) {
+    height: 60px;
+  }
+}

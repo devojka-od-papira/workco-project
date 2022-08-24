@@ -9,9 +9,12 @@
 
   @include breakpoint(tabletOnly) {
     display: flex;
-    justify-content: space-between;
-    width: calc(100% - 64px);
-    margin-left: 64px;
+    justify-content: flex-end;
+    width: 100%;
+    
+    li {
+      margin: 0 9px;
+    }
   }
 
   @include breakpoint(desktop) {

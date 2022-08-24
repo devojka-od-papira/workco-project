@@ -1,7 +1,22 @@
 import React from 'react';
 
+import classNames from 'classnames/bind';
 import styles from './Logo.module.scss';
 
-const Logo: React.FC = () => <div className={styles.logo} />;
+interface LogoProps {
+  mobileMenuOpen: boolean;
+}
+
+const Logo: React.FC<LogoProps> = ({ mobileMenuOpen }) => {
+  const cx = classNames.bind(styles);
+  return (
+    <div
+      className={cx({
+        logo: mobileMenuOpen,
+        menuClosed: !mobileMenuOpen,
+      })}
+    />
+  );
+};
 
 export default Logo;

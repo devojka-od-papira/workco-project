@@ -17,19 +17,3 @@
     }
   }
 }
-
-/**
-h1 {
-  font-size: 30px;
-  padding: 40px;
-
-  @include breakpoint(mobileOnly) {
-    font-size: 20px;
-  }
-
-  @include breakpoint(tablet) {
-    font-size: 26px;
-    padding: 60px;
-  }
-}
-**/

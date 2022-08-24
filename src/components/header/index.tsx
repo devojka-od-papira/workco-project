@@ -43,8 +43,11 @@ function Header() {
           divider: mobileMenuOpen && breakpoint === 'sm',
         })}
       >
-        <Column size={{ sm: 1, md: 2, lg: 2 }}>
-          <Logo />
+        <Column
+          className={cx({ menuOpen: mobileMenuOpen })}
+          size={{ sm: 1, md: 2, lg: 2 }}
+        >
+          <Logo mobileMenuOpen={mobileMenuOpen} />
         </Column>
         <Column
           className={cx(styles.menuMobileWrapper)}
@@ -61,6 +64,7 @@ function Header() {
             <Icon
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               icon={mobileMenuOpen ? closeIcon : hamburgerIcon}
+              mobileMenuOpen={mobileMenuOpen}
             />
           )}
         </Column>
