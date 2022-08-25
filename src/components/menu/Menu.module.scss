@@ -1,0 +1,49 @@
+@import "src/assets/styles/typography";
+
+.ul {
+  @include breakpoint(mobileOnly) {
+    display: block;
+    flex-direction: column;
+    margin-top: 57px;
+  }
+
+  @include breakpoint(tabletOnly) {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+    li {
+      margin: 0 9px;
+    }
+  }
+
+  @include breakpoint(desktop) {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      margin: 0 9px;
+    }
+  }
+}
+
+.menu_item {
+  @include h3;
+
+  text-transform: uppercase;
+
+  @include  breakpoint(mobileOnly) {
+    margin: 10px 0;
+  }
+
+  @include breakpoint(tabletOnly) {
+
+    @include h6;
+
+  }
+}
+
+.menu_position {
+  position: absolute;
+  left: 2%;
+}

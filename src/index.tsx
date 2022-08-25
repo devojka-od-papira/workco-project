@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import { GridSystem } from 'light-react-grid';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './main.scss';
 import { gridSettings } from './constants';
+
+import './assets/styles/main.scss';
 
 ReactDOM.render(
   <GridSystem useGridHelper={true} settings={gridSettings}>

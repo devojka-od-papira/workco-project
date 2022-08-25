@@ -1,0 +1,15 @@
+@import 'src/assets/styles/layout';
+
+.container {
+  @include breakpoint(mobileOnly) {
+    margin: 0 2%;
+  }
+
+  @include breakpoint(tabletOnly) {
+    margin: 0 4%;
+  }
+
+  @include breakpoint(desktop) {
+  margin: 0 7%;
+  }
+}
