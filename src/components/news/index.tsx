@@ -43,7 +43,7 @@ const News: React.FC = () => {
       <Container>
         <Grid>
           <Column size={{ lg: 2 }} className={styles.section}>
-            <Section title="News" />
+            <Section title="News" dividerColor="#00ADC4" />
           </Column>
         </Grid>
         <Grid>
