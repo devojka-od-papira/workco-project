@@ -16,12 +16,14 @@ const News: React.FC = () => {
       src: Toronto,
       description:
         "The biennial's curators asked how land might be an archive, prompting reflections on human conflicts over land as well as visions for alternate relations.",
+      alt: 'Toronto',
     },
     {
       title: "Mexico's Best-Kept Secret Is Zacatecas’s Vibrant Art Scene",
       src: Mexico,
       description:
         "The biennial's curators asked how land might be an archive, prompting reflections on human conflicts over land as well as visions for alternate relations.",
+      alt: 'Mexico',
     },
     {
       title:
@@ -29,6 +31,7 @@ const News: React.FC = () => {
       src: AbstractPainter,
       description:
         "The biennial's curators asked how land might be an archive, prompting reflections on human conflicts over land as well as visions for alternate relations.",
+      alt: 'Abstract painter',
     },
     {
       title:
@@ -36,6 +39,7 @@ const News: React.FC = () => {
       src: Archeology,
       description:
         "The biennial's curators asked how land might be an archive, prompting reflections on human conflicts over land as well as visions for alternate relations.",
+      alt: 'Archeology',
     },
   ];
   return (
@@ -53,6 +57,7 @@ const News: React.FC = () => {
               title={newsItem.title}
               src={newsItem.src}
               description={newsItem.description}
+              alt={newsItem.alt}
             />
           ))}
         </Grid>
