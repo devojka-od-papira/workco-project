@@ -8,16 +8,14 @@
   width: 100%;
   height: 218px;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .image {
-  margin-left: -10px;
-  height: 100%;
-  width: calc(100% + 10px);
+  width: 100%;
 }
 
 .description {
-  margin-right: -10px;
   height: 218px;
   color: #707070;
   @include h4;

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Column } from 'light-react-grid';
+import { Column, Grid } from 'light-react-grid';
 import styles from './NewsItem.module.scss';
 
 interface NewsItemProps {
@@ -13,7 +13,7 @@ const NewsItem: FC<NewsItemProps> = ({ title, src, description, alt }) => (
   <Column className={styles.wrapper} size={{ lg: 6 }}>
     <div className={styles.item}>
       <h3 className={styles.title}>{title}</h3>
-      <div className={styles.content}>
+      <Grid>
         <Column size={{ lg: 3 }}>
           <div className={styles.imageWrapper}>
             <img className={styles.image} src={src} alt={alt} />
@@ -24,7 +24,7 @@ const NewsItem: FC<NewsItemProps> = ({ title, src, description, alt }) => (
             <p>{description}</p>
           </div>
         </Column>
-      </div>
+      </Grid>
     </div>
   </Column>
 );
