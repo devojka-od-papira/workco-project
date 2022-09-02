@@ -1,7 +1,6 @@
 import React from 'react';
 import { Column, Grid } from 'light-react-grid';
 import Section from '../section';
-import Container from '../container';
 import styles from './News.module.scss';
 import NewsItem from '../newsItem';
 import Toronto from '../../assets/images/toronto.jpeg';
@@ -43,35 +42,28 @@ const News: React.FC = () => {
     },
   ];
   return (
-    <div>
-      <Container>
-        <Grid>
-          <Column size={{ lg: 2 }} className={styles.section}>
-            <Section title="News" />
-          </Column>
-        </Grid>
-        <Grid>
-          {newsData.map((newsItem) => (
-            <NewsItem
-              key={newsItem.title}
-              title={newsItem.title}
-              src={newsItem.src}
-              description={newsItem.description}
-              alt={newsItem.alt}
-            />
-          ))}
-        </Grid>
-        <Grid>
-          <Column size={{ lg: 2 }}>
-            <div className={styles.moreNewsWrapper}>
-              <a className={styles.moreNews} href="https://www.google.com">
-                More news
-              </a>
-            </div>
-          </Column>
-        </Grid>
-      </Container>
-    </div>
+    <Section title="News">
+      <Grid>
+        {newsData.map((newsItem) => (
+          <NewsItem
+            key={newsItem.title}
+            title={newsItem.title}
+            src={newsItem.src}
+            description={newsItem.description}
+            alt={newsItem.alt}
+          />
+        ))}
+      </Grid>
+      <Grid>
+        <Column size={{ lg: 2 }}>
+          <div className={styles.moreNewsWrapper}>
+            <a className={styles.moreNews} href="https://www.google.com">
+              More news
+            </a>
+          </div>
+        </Column>
+      </Grid>
+    </Section>
   );
 };
 
