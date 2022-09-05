@@ -1,22 +1,18 @@
 import React from 'react';
-
-import classNames from 'classnames/bind';
+import cx from 'classnames';
 import styles from './Logo.module.scss';
 
 interface LogoProps {
   mobileMenuOpen: boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ mobileMenuOpen }) => {
-  const cx = classNames.bind(styles);
-  return (
-    <div
-      className={cx({
-        logo: mobileMenuOpen,
-        logo_small: !mobileMenuOpen,
-      })}
-    />
-  );
-};
+const Logo: React.FC<LogoProps> = ({ mobileMenuOpen }) => (
+  <div
+    className={cx(
+      styles.logo && mobileMenuOpen,
+      styles.logo_small && !mobileMenuOpen
+    )}
+  />
+);
 
 export default Logo;

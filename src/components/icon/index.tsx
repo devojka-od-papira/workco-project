@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames/bind';
+import cx from 'classnames';
 import styles from './Icon.module.scss';
 
 export interface IconProps {
@@ -8,19 +8,13 @@ export interface IconProps {
   mobileMenuOpen: boolean;
 }
 
-const Icon: React.FC<IconProps> = ({ icon, onClick, mobileMenuOpen }) => {
-  const cx = classNames.bind(styles);
-  return (
-    <button
-      className={cx({
-        menu_button: true,
-        menu_closed: !mobileMenuOpen,
-      })}
-      onClick={onClick}
-    >
-      <img src={icon} alt="menu" />
-    </button>
-  );
-};
+const Icon: React.FC<IconProps> = ({ icon, onClick, mobileMenuOpen }) => (
+  <button
+    className={cx(styles.menu_button, !mobileMenuOpen && styles.menu_closed)}
+    onClick={onClick}
+  >
+    <img src={icon} alt="menu" />
+  </button>
+);
 
 export default Icon;

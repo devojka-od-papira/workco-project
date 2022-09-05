@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Column, Grid } from 'light-react-grid';
 import styles from './Section.module.scss';
 import Container from '../container';

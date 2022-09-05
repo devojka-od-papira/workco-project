@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames/bind';
+import cx from 'classnames';
 import styles from './Menu.module.scss';
 
 type MenuTypes = {
@@ -12,22 +12,14 @@ interface MenuProps {
   mobileMenuOpen: boolean;
 }
 
-const Menu: React.FC<MenuProps> = ({ menu, mobileMenuOpen }) => {
-  const cx = classNames.bind(styles);
-  return (
-    <ul
-      className={cx({
-        ul: true,
-        menu_position: mobileMenuOpen,
-      })}
-    >
-      {menu.map((menuItem) => (
-        <li className={cx({ menu_item: true })} key={menuItem.title}>
-          {menuItem.title}
-        </li>
-      ))}
-    </ul>
-  );
-};
+const Menu: React.FC<MenuProps> = ({ menu, mobileMenuOpen }) => (
+  <ul className={cx(styles.ul, styles.menu_position && mobileMenuOpen)}>
+    {menu.map((menuItem) => (
+      <li className={cx(styles.menu_item)} key={menuItem.title}>
+        {menuItem.title}
+      </li>
+    ))}
+  </ul>
+);
 
 export default Menu;

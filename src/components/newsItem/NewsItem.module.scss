@@ -16,17 +16,17 @@
 }
 
 .description {
-  height: 218px;
-  color: #707070;
   @include h4;
 
+  height: 218px;
+  color: #707070;
 }
 
 .title {
-  color: #191919;
-  margin-bottom: 22px;
   @include h2;
 
+  color: #191919;
+  margin-bottom: 22px;
 }
 
 .item {

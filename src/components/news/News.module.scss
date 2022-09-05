@@ -2,17 +2,12 @@
 
 .section {
   margin-bottom: 50px;
-  h3 {
-    &::after {
-      background-color: red;
-    }
-  }
 }
 
 .moreNews {
-  color: #191919;
   @include h3;
 
+  color: #191919;
 }
 
 .moreNewsWrapper {
