@@ -45,13 +45,14 @@ const News: React.FC = () => {
     <Section title="News">
       <Grid>
         {newsData.map((newsItem) => (
-          <NewsItem
-            key={newsItem.title}
-            title={newsItem.title}
-            src={newsItem.src}
-            description={newsItem.description}
-            alt={newsItem.alt}
-          />
+          <Column className={styles.wrapper} size={{ lg: 6 }} key={newsItem.title}>
+            <NewsItem
+              title={newsItem.title}
+              src={newsItem.src}
+              description={newsItem.description}
+              alt={newsItem.alt}
+            />
+          </Column>
         ))}
       </Grid>
       <Grid>

@@ -2,6 +2,11 @@
 
 .section {
   margin-bottom: 50px;
+  h3 {
+    &::after {
+      background-color: red;
+    }
+  }
 }
 
 .moreNews {
@@ -13,3 +18,8 @@
 .moreNewsWrapper {
   margin-top: 41px;
 }
+
+.wrapper {
+  margin-bottom: 20px;
+}
+

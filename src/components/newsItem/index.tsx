@@ -10,23 +10,21 @@ interface NewsItemProps {
 }
 
 const NewsItem: FC<NewsItemProps> = ({ title, src, description, alt }) => (
-  <Column className={styles.wrapper} size={{ lg: 6 }}>
-    <div className={styles.item}>
-      <h3 className={styles.title}>{title}</h3>
-      <Grid>
-        <Column size={{ lg: 3 }}>
-          <div className={styles.imageWrapper}>
-            <img className={styles.image} src={src} alt={alt} />
-          </div>
-        </Column>
-        <Column size={{ lg: 3 }}>
-          <div className={styles.description}>
-            <p>{description}</p>
-          </div>
-        </Column>
-      </Grid>
-    </div>
-  </Column>
+  <div className={styles.item}>
+    <h3 className={styles.title}>{title}</h3>
+    <Grid>
+      <Column size={{ lg: 3 }}>
+        <div className={styles.imageWrapper}>
+          <img className={styles.image} src={src} alt={alt} />
+        </div>
+      </Column>
+      <Column size={{ lg: 3 }}>
+        <div className={styles.description}>
+          <p>{description}</p>
+        </div>
+      </Column>
+    </Grid>
+  </div>
 );
 
 export default NewsItem;
