@@ -10,7 +10,7 @@ export interface IconProps {
 
 const Icon: React.FC<IconProps> = ({ icon, onClick, mobileMenuOpen }) => (
   <button
-    className={cx(styles.menu_button, !mobileMenuOpen && styles.menu_closed)}
+    className={cx(styles.menuButton, !mobileMenuOpen && styles.menuClosed)}
     onClick={onClick}
   >
     <img src={icon} alt="menu" />

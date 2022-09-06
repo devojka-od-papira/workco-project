@@ -42,13 +42,13 @@ function Header() {
         })}
       >
         <Column
-          className={cx(mobileMenuOpen && styles.menu_open)}
+          className={cx(mobileMenuOpen && styles.menuOpen)}
           size={{ sm: 1, md: 2, lg: 2 }}
         >
           <Logo mobileMenuOpen={mobileMenuOpen} />
         </Column>
         <Column
-          className={styles.menu_open}
+          className={styles.menuOpen}
           size={{ sm: 3, md: 6, lg: 5 }}
           offsetLeft={{ lg: 1 }}
         >
