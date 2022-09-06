@@ -5,11 +5,16 @@
 }
 
 .moreNews {
-  color: #191919;
   @include h3;
 
+  color: #191919;
 }
 
 .moreNewsWrapper {
   margin-top: 41px;
 }
+
+.wrapper {
+  margin-bottom: 20px;
+}
+

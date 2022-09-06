@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Column, Grid, useBreakpoint } from 'light-react-grid';
-import classNames from 'classnames/bind';
+import cx from 'classnames';
 import Container from '../container';
 import Menu from '../menu';
 import Logo from '../logo';
@@ -10,7 +10,6 @@ import closeIcon from '../../assets/icons/close.svg';
 import hamburgerIcon from '../../assets/icons/hamburger.svg';
 
 function Header() {
-  const cx = classNames.bind(styles);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const breakpoint = useBreakpoint();
   const menu = [
@@ -38,19 +37,18 @@ function Header() {
   return (
     <Container>
       <Grid
-        className={cx({
-          header: true,
-          divider: mobileMenuOpen && breakpoint === 'sm',
+        className={cx(styles.header, {
+          [styles.divider]: mobileMenuOpen && breakpoint === 'sm',
         })}
       >
         <Column
-          className={cx({ menu_open: mobileMenuOpen })}
+          className={cx(mobileMenuOpen && styles.menuOpen)}
           size={{ sm: 1, md: 2, lg: 2 }}
         >
           <Logo mobileMenuOpen={mobileMenuOpen} />
         </Column>
         <Column
-          className={cx({ menu_mobile_wrapper: true })}
+          className={styles.menuOpen}
           size={{ sm: 3, md: 6, lg: 5 }}
           offsetLeft={{ lg: 1 }}
         >

@@ -27,7 +27,7 @@
   }
 }
 
-.menu_item {
+.menuItem {
   @include h3;
 
   text-transform: uppercase;
@@ -43,7 +43,7 @@
   }
 }
 
-.menu_position {
+.menuPosition {
   position: absolute;
   left: 2%;
 }

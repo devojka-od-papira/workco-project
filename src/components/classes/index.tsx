@@ -62,7 +62,7 @@ const Classes: React.FC = () => {
       <Container>
         <Grid>
           <Column size={{ lg: 2 }} className={styles.section}>
-            <Section title="Classes" dividerColor="#8800C4" />
+            <Section title="Classes" />
           </Column>
         </Grid>
         <Grid>
