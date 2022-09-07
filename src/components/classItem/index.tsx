@@ -13,7 +13,7 @@ const ClassItem: React.FC<ClassItemProps> = ({ title, src, alt }) => (
   <div className={styles.content}>
     <Grid>
       <Column className={styles.content} size={{ lg: 2 }}>
-        <div className={styles.title_wrapper}>
+        <div className={styles.titleWrapper}>
           <h4 className={styles.title}>{title}</h4>
         </div>
       </Column>
