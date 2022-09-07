@@ -10,17 +10,17 @@ interface ClassItemProps {
 }
 
 const ClassItem: React.FC<ClassItemProps> = ({ title, src, alt }) => (
-  <Column size={{ lg: 3 }}>
-    <div className={styles.content}>
-      <Grid>
-        <Column className={styles.content} size={{ lg: 2 }}>
-          <div className={styles.title_wrapper}>
-            <h4 className={styles.title}>{title}</h4>
-          </div>
-        </Column>
-      </Grid>
+  <div className={styles.content}>
+    <Grid>
+      <Column className={styles.content} size={{ lg: 2 }}>
+        <div className={styles.title_wrapper}>
+          <h4 className={styles.title}>{title}</h4>
+        </div>
+      </Column>
+    </Grid>
+    <div className={styles.imageWrapper}>
       <img className={styles.img} src={src} alt={alt} />
     </div>
-  </Column>
+  </div>
 );
 export default ClassItem;

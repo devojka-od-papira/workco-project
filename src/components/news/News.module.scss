@@ -1,5 +1,4 @@
 @import "src/assets/styles/typography";
-@import "src/assets/styles/layout";
 
 .section {
   margin-bottom: 50px;
@@ -13,6 +12,7 @@
 
 .moreNewsWrapper {
   margin-top: 41px;
+  margin-bottom: 141px;
 
   @include breakpoint(tabletOnly) {
     display: flex;
@@ -24,5 +24,6 @@
 
 .wrapper {
   margin-bottom: 20px;
+  margin-top: 38px;
 }
 

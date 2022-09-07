@@ -2,7 +2,6 @@ import React from 'react';
 import { Column, Grid } from 'light-react-grid';
 import Section from '../section';
 import ClassItem from '../classItem';
-import Container from '../container';
 import DrawingPainting from '../../assets/images/drawing&painting.jpeg';
 import Sculpture from '../../assets/images/Tuileries.jpeg';
 import Mosaic from '../../assets/images/antonioGaudi.jpeg';
@@ -58,25 +57,19 @@ const Classes: React.FC = () => {
     },
   ];
   return (
-    <div>
-      <Container>
-        <Grid>
-          <Column size={{ lg: 2 }} className={styles.section}>
-            <Section title="Classes" dividerColor="#8800C4" />
-          </Column>
-        </Grid>
-        <Grid>
-          {classData.map((classItem) => (
+    <Section title="Classes">
+      <Grid>
+        {classData.map((classItem) => (
+          <Column size={{ lg: 3 }} key={classItem.title} className={styles.wrapper}>
             <ClassItem
-              key={classItem.title}
               title={classItem.title}
               src={classItem.src}
               alt={classItem.alt}
             />
-          ))}
-        </Grid>
-      </Container>
-    </div>
+          </Column>
+        ))}
+      </Grid>
+    </Section>
   );
 };
 
