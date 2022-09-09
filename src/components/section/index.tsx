@@ -6,20 +6,14 @@ import Container from '../container';
 
 interface SectionProps {
   title: string;
+  classNames: string;
 }
 
-const Section: React.FC<SectionProps> = ({ title, children }) => (
+const Section: React.FC<SectionProps> = ({ title, children, classNames }) => (
   <Container>
-    <Grid>
+    <Grid className={classNames}>
       <Column size={{ lg: 2 }} className={styles.section}>
-        <h3
-          className={cx(styles.title, {
-            [styles.blue]: title === 'News',
-            [styles.purple]: title === 'Classes',
-          })}
-        >
-          {title}
-        </h3>
+        <h3 className={cx(styles.title, { classNames })}>{title}</h3>
       </Column>
     </Grid>
     {children}

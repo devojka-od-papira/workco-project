@@ -57,10 +57,14 @@ const Classes: React.FC = () => {
     },
   ];
   return (
-    <Section title="Classes">
+    <Section classNames={styles.section} title="Classes">
       <Grid>
         {classData.map((classItem) => (
-          <Column size={{ lg: 3 }} key={classItem.title} className={styles.wrapper}>
+          <Column
+            size={{ lg: 3 }}
+            key={classItem.title}
+            className={styles.wrapper}
+          >
             <ClassItem
               title={classItem.title}
               src={classItem.src}

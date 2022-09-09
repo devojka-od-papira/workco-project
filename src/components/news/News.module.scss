@@ -3,6 +3,12 @@
 
 .section {
   margin-bottom: 50px;
+
+  h3 {
+    &::after {
+      background-color: $blue;
+    }
+  }
 }
 
 .moreNews {

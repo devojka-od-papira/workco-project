@@ -7,7 +7,7 @@
 }
 
 .titleWrapper {
-  background-color: rgba(52, 52, 52, .43);
+  background-color: $label-bg;
   padding: 14px 0;
   position: absolute;
   bottom: 34px;
@@ -19,7 +19,7 @@
   @include h5;
 
   color: $light;
-  margin-left: 23px;
+  padding-left: 23px;
 }
 
 .imageWrapper {

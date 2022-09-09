@@ -7,23 +7,9 @@
   color: $primary-gray;
   position: relative;
   padding-bottom: 20px;
-}
 
-.purple {
   &::after {
-    background-color: $purple;
-    content: '';
-    height: 3px;
-    position: absolute;
-    right: 0;
-    width: 3000px;
-    bottom: 0;
-  }
-}
-
-.blue {
-  &::after {
-    background-color: $blue;
+    background-color: $secondary-gray;
     content: '';
     height: 3px;
     position: absolute;
