@@ -42,7 +42,7 @@ const News: React.FC = () => {
     },
   ];
   return (
-    <Section title="News">
+    <Section classNames={styles.section} title="News">
       <Grid>
         {newsData.map((newsItem) => (
           <Column
