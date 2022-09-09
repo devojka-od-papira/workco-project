@@ -1,5 +1,7 @@
+@import "src/assets/styles/variable";
+
 .menuButton {
-  background-color: #fff;
+  background-color: $light;
   border: none;
   cursor: pointer;
 }

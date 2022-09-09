@@ -1,4 +1,5 @@
 @import "src/assets/styles/typography";
+@import "src/assets/styles/variable";
 
 .section {
   margin-bottom: 50px;
@@ -7,7 +8,7 @@
 .moreNews {
   @include h3;
 
-  color: #191919;
+  color: $dark;
 }
 
 .moreNewsWrapper {
