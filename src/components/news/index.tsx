@@ -45,7 +45,11 @@ const News: React.FC = () => {
     <Section title="News">
       <Grid>
         {newsData.map((newsItem) => (
-          <Column className={styles.wrapper} size={{ lg: 6 }} key={newsItem.title}>
+          <Column
+            className={styles.wrapper}
+            size={{ md: 4, lg: 6 }}
+            key={newsItem.title}
+          >
             <NewsItem
               title={newsItem.title}
               src={newsItem.src}
