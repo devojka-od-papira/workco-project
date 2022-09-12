@@ -1,9 +1,6 @@
 @import "src/assets/styles/typography";
-<<<<<<< HEAD
-@import "src/assets/styles/layout";
-=======
->>>>>>> 946ee56 (Fixed git comments added color variable)
 @import "src/assets/styles/variable";
+@import "src/assets/styles/layout";
 
 .content {
   display: flex;
@@ -29,15 +26,12 @@
 
   height: 218px;
   color: $third-gray;
-<<<<<<< HEAD
 
   @include breakpoint(tabletOnly) {
     @include h7;
 
     height: 81px;
   }
-=======
->>>>>>> 946ee56 (Fixed git comments added color variable)
 }
 
 .title {

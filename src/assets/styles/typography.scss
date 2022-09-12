@@ -98,3 +98,12 @@
   font-weight: normal;
 >>>>>>> d63d51c (Refactored)
 }
+
+@mixin h7 {
+
+  @include roboto-font;
+
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+}
