@@ -1,26 +1,29 @@
 @import "src/assets/styles/typography";
+@import "src/assets/styles/variable";
 
-.no_content {
+.noContent {
   height: 268px;
-  background-color: #F8F8F8;
+  background-color: $bg-light;
 }
 
 .content {
   height: 426px;
-  background-color: #414141;
+  background-color: $bg-dark ;
   box-sizing: border-box;
   padding-top: 94px;
 }
 
 .title {
-  color: #fff;
-  margin-bottom: 6px;
   @include h7;
+
+  color: $light;
+  margin-bottom: 6px;
 
 }
 
 .description {
-  color: #fff;
   @include h3;
+
+  color: $light;
 
 }
