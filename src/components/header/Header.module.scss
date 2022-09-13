@@ -1,4 +1,5 @@
 @import "src/assets/styles/layout";
+@import "src/assets/styles/variable";
 
 .header {
 
@@ -27,7 +28,7 @@
 }
 
 .divider {
-  box-shadow: 0 3px 2px -2px #666;
+  box-shadow: 0 3px 2px -2px $secondary-gray;
   position: absolute;
   right: 0;
   left: 0;

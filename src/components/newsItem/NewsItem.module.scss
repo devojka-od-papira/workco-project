@@ -1,4 +1,5 @@
 @import "src/assets/styles/typography";
+@import "src/assets/styles/variable";
 
 .content {
   display: flex;
@@ -19,13 +20,13 @@
   @include h4;
 
   height: 218px;
-  color: #707070;
+  color: $third-gray;
 }
 
 .title {
   @include h2;
 
-  color: #191919;
+  color: $dark;
   margin-bottom: 22px;
 }
 

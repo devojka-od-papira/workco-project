@@ -1,20 +1,29 @@
 @import "src/assets/styles/typography";
+@import "src/assets/styles/variable";
 
 .section {
   margin-bottom: 50px;
+
+  h3 {
+    &::after {
+      background-color: $blue;
+    }
+  }
 }
 
 .moreNews {
   @include h3;
 
-  color: #191919;
+  color: $dark;
 }
 
 .moreNewsWrapper {
   margin-top: 41px;
+  margin-bottom: 141px;
 }
 
 .wrapper {
   margin-bottom: 20px;
+  margin-top: 38px;
 }
 

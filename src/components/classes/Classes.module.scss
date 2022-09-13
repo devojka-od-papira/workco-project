@@ -1,0 +1,13 @@
+@import "src/assets/styles/variable";
+
+.wrapper {
+  margin-top: 30px;
+}
+
+.section {
+  h3 {
+    &::after {
+      background-color: $purple;
+    }
+  }
+}

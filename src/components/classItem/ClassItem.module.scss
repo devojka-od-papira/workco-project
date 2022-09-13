@@ -1,0 +1,37 @@
+@import "src/assets/styles/typography";
+@import "src/assets/styles/variable";
+
+.content {
+  position: relative;
+  margin-bottom: 47px;
+}
+
+.titleWrapper {
+  background-color: $label-bg;
+  padding: 14px 0;
+  position: absolute;
+  bottom: 34px;
+  width: 65%;
+}
+
+
+.title {
+  @include h5;
+
+  color: $light;
+  padding-left: 23px;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 332px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+

@@ -1,15 +1,15 @@
 @import "src/assets/styles/typography";
+@import "src/assets/styles/variable";
 
 .title {
   @include h1;
 
-  color: #5C5C5C;
+  color: $primary-gray;
   position: relative;
   padding-bottom: 20px;
-  margin-bottom: 50px;
 
   &::after {
-    background-color: #00ADC4;
+    background-color: $secondary-gray;
     content: '';
     height: 3px;
     position: absolute;
@@ -18,4 +18,3 @@
     bottom: 0;
   }
 }
-
