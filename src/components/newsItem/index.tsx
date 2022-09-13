@@ -14,7 +14,7 @@ const NewsItem: FC<NewsItemProps> = ({ title, src, description, alt }) => (
   <div className={styles.item}>
     <h3 className={styles.title}>{title}</h3>
     <Grid>
-      <Column size={{ lg: 3 }}>
+      <Column size={{ sm: 4, lg: 3 }}>
         <div className={styles.imageWrapper}>
           <img className={styles.image} src={src} alt={alt} />
         </div>
