@@ -3,12 +3,12 @@
 
 .noContent {
   height: 268px;
-  background-color: $bg-light;
+  background-color: $color-light-gray;
 }
 
 .content {
   height: 426px;
-  background-color: $bg-dark ;
+  background-color: $color-dark-gray ;
   box-sizing: border-box;
   padding-top: 94px;
 }
@@ -16,7 +16,7 @@
 .title {
   @include h7;
 
-  color: $light;
+  color: $color-light;
   margin-bottom: 6px;
 
 }
@@ -24,6 +24,6 @@
 .description {
   @include h3;
 
-  color: $light;
+  color: $color-light;
 
 }
