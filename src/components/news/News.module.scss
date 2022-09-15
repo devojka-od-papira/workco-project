@@ -5,6 +5,10 @@
 .section {
   margin-bottom: 50px;
 
+  @include breakpoint(tabletOnly) {
+    margin-bottom: 0;
+  }
+
   h3 {
     &::after {
       background-color: $blue;
@@ -26,12 +30,15 @@
     display: flex;
     justify-content: center;
     margin-bottom: 54px;
-    margin-top: 0;
+    margin-top: -6px;
   }
 }
 
 .wrapper {
   margin-bottom: 20px;
   margin-top: 38px;
+  @include breakpoint(tabletOnly) {
+    margin-top: 35px;
+  }
 }
 

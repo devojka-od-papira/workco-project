@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ReactElement, useState } from 'react';
 import { Column, Grid, useBreakpoint } from 'light-react-grid';
 import cx from 'classnames';
 import Container from '../container';
@@ -9,7 +9,7 @@ import styles from './Header.module.scss';
 import closeIcon from '../../assets/icons/close.svg';
 import hamburgerIcon from '../../assets/icons/hamburger.svg';
 
-function Header() {
+function Header(): ReactElement {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const breakpoint = useBreakpoint();
   const menu = [
