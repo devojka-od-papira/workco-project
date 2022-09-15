@@ -58,7 +58,6 @@
   font-size: 22px;
   line-height: 27px;
   font-weight: 400;
-
 }
 
 @mixin h5 {
@@ -68,7 +67,6 @@
   font-size: 20px;
   line-height: 27px;
   font-weight: 700;
-
 }
 
 @mixin h6 {
@@ -77,7 +75,6 @@
 
   font-size: 20px;
   font-weight: 400;
-
 }
 
 @mixin h7 {
@@ -92,7 +89,12 @@
 @mixin h8 {
   @include noto-font;
 
+<<<<<<< HEAD
   font-size: 24px;
   font-weight: 700;
   line-height: 33px;
+=======
+  font-size: 47px;
+  font-weight: normal;
+>>>>>>> d63d51c (Refactored)
 }
