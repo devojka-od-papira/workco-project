@@ -7,7 +7,11 @@
 }
 
 .titleWrapper {
+<<<<<<< HEAD
   background-color: $label-bg;
+=======
+  background-color: rgba(52, 52, 52, .43);
+>>>>>>> 946ee56 (Fixed git comments added color variable)
   padding: 14px 0;
   position: absolute;
   bottom: 34px;
@@ -19,7 +23,11 @@
   @include h5;
 
   color: $light;
+<<<<<<< HEAD
   padding-left: 23px;
+=======
+  margin-left: 23px;
+>>>>>>> 946ee56 (Fixed git comments added color variable)
 }
 
 .imageWrapper {
