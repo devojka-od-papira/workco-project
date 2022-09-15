@@ -107,3 +107,11 @@
   line-height: 19px;
   font-weight: 400;
 }
+
+@mixin h8 {
+  @include noto-font;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+}
