@@ -5,18 +5,6 @@ import News from './components/news';
 import Classes from './components/classes';
 import Footer from './components/footer';
 
-<<<<<<< HEAD
-function App(): ReactElement {
-  return (
-    <div>
-      <Header />
-      <News />
-      <Classes />
-      <Footer />
-    </div>
-  );
-}
-=======
 const App = (): ReactElement => (
   <>
     <Header />
@@ -25,6 +13,5 @@ const App = (): ReactElement => (
     <Footer />
   </>
 );
->>>>>>> d63d51c (Refactored)
 
 export default App;

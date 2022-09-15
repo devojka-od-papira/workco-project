@@ -1,13 +1,6 @@
 @import "src/assets/styles/typography";
 @import "src/assets/styles/variable";
-<<<<<<< HEAD
-<<<<<<< HEAD
 @import "src/assets/styles/layout";
-=======
->>>>>>> 946ee56 (Fixed git comments added color variable)
-=======
-@import "src/assets/styles/layout";
->>>>>>> e308f78 (Classes section is now tablet responsive)
 
 .title {
   @include h1;
@@ -23,11 +16,7 @@
   }
 
   &::after {
-<<<<<<< HEAD
     background-color: $secondary-gray;
-=======
-    background-color: $blue;
->>>>>>> 946ee56 (Fixed git comments added color variable)
     content: '';
     height: 3px;
     position: absolute;

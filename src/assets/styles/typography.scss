@@ -89,28 +89,6 @@
 @mixin h8 {
   @include noto-font;
 
-<<<<<<< HEAD
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 33px;
-=======
-  font-size: 47px;
-  font-weight: normal;
->>>>>>> d63d51c (Refactored)
-}
-
-@mixin h7 {
-
-  @include roboto-font;
-
-  font-size: 16px;
-  line-height: 19px;
-  font-weight: 400;
-}
-
-@mixin h8 {
-  @include noto-font;
-
   font-size: 24px;
   font-weight: 700;
   line-height: 33px;
