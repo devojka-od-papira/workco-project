@@ -14,7 +14,7 @@
 
   h3 {
     &::after {
-      background-color: $blue;
+      background-color: $color-blue;
     }
   }
 }
@@ -22,7 +22,7 @@
 .moreNews {
   @include h3;
 
-  color: $dark;
+  color: $color-dark;
 }
 
 .moreNewsWrapper {

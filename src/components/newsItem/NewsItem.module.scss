@@ -43,7 +43,7 @@
 .title {
   @include h2;
 
-  color: $dark;
+  color: $color-dark;
   margin-bottom: 22px;
 
   @include breakpoint(tabletOnly) {
