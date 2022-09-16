@@ -11,7 +11,7 @@ interface SectionProps {
 const Section: React.FC<SectionProps> = ({ title, children, classNames }) => (
   <Container>
     <Grid className={classNames}>
-      <Column size={{ lg: 2 }} className={styles.section}>
+      <Column size={{ sm: 1, md: 1, lg: 2 }} className={styles.section}>
         <h3 className={styles.title}>{title}</h3>
       </Column>
     </Grid>

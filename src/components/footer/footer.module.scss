@@ -4,6 +4,10 @@
 .noContent {
   height: 268px;
   background-color: $color-light-gray;
+
+  @include breakpoint(mobileOnly) {
+    height: 40px;
+  }
 }
 
 .content {
@@ -11,6 +15,10 @@
   background-color: $color-dark-gray ;
   box-sizing: border-box;
   padding-top: 94px;
+
+  @include breakpoint(mobileOnly) {
+    height: 260px;
+  }
 }
 
 .title {
@@ -25,5 +33,9 @@
   @include h3;
 
   color: $color-light;
+
+  @include breakpoint(mobileOnly) {
+    @include h9;
+  }
 
 }
