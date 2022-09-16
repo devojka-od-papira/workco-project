@@ -38,11 +38,14 @@ function Header(): ReactElement {
     <Container>
       <Grid
         className={cx(styles.header, {
-          [styles.divider]: mobileMenuOpen && breakpoint === 'sm',
+          [styles.divider]: breakpoint === 'sm',
         })}
       >
         <Column
-          className={cx(mobileMenuOpen && styles.menuOpen)}
+          className={cx(
+            styles.logoMobileWrapper,
+            mobileMenuOpen && styles.menuOpen
+          )}
           size={{ sm: 1, md: 2, lg: 2 }}
         >
           <Logo mobileMenuOpen={mobileMenuOpen} />

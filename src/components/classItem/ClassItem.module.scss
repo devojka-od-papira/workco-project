@@ -1,9 +1,18 @@
 @import "src/assets/styles/typography";
 @import "src/assets/styles/variable";
+@import "src/assets/styles/layout";
 
 .content {
   position: relative;
   margin-bottom: 47px;
+
+  @include breakpoint(mobileOnly) {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint(tabletOnly) {
+    margin-bottom: 0;
+  }
 }
 
 .titleWrapper {

@@ -9,10 +9,24 @@
   position: relative;
   padding-bottom: 20px;
 
+  @include breakpoint(mobileOnly) {
+    @include h8;
+
+    margin-bottom: 43px;
+
+    &::after {
+      right: -4% !important;
+    }
+  }
+
   @include breakpoint(tabletOnly) {
     @include h8;
 
     padding-bottom: 8px;
+
+    &::after {
+      right: -4% !important;
+    }
   }
 
   &::after {

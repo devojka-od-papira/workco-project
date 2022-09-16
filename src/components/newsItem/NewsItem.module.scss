@@ -12,6 +12,10 @@
   margin-bottom: 60px;
   overflow: hidden;
 
+  @include breakpoint(mobileOnly) {
+    margin-bottom: 14px;
+  }
+
   @include breakpoint(tabletOnly) {
     margin-bottom: 19px;
   }
@@ -27,6 +31,12 @@
   height: 218px;
   color: $third-gray;
 
+  @include breakpoint(mobileOnly) {
+    @include h10;
+
+    height: 81px;
+  }
+
   @include breakpoint(tabletOnly) {
     @include h7;
 
@@ -39,6 +49,10 @@
 
   color: $color-dark;
   margin-bottom: 22px;
+
+  @include breakpoint(mobileOnly) {
+    margin-bottom: 0;
+  }
 
   @include breakpoint(tabletOnly) {
     @include h5;

@@ -1,10 +1,14 @@
 @import "src/assets/styles/typography";
 @import "src/assets/styles/layout";
 @import "src/assets/styles/variable";
-@import "src/assets/styles/layout";
 
 .section {
   margin-bottom: 50px;
+
+  @include breakpoint(mobileOnly) {
+    margin-bottom: 0;
+    padding-top: 84px;
+  }
 
   @include breakpoint(tabletOnly) {
     margin-bottom: 0;
@@ -21,23 +25,45 @@
   @include h3;
 
   color: $color-dark;
+
+  @include breakpoint(mobileOnly) {
+    @include h11;
+  }
+
+  @include breakpoint(tabletOnly) {
+    @include h11;
+  }
 }
 
 .moreNewsWrapper {
   margin-top: 41px;
   margin-bottom: 141px;
 
+  @include breakpoint(mobileOnly) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+    margin-top: 29px;
+  }
+
   @include breakpoint(tabletOnly) {
     display: flex;
     justify-content: center;
     margin-bottom: 54px;
-    margin-top: -6px;
+    margin-top: 29px;
   }
 }
 
 .wrapper {
   margin-bottom: 20px;
   margin-top: 38px;
+
+  @include breakpoint(mobileOnly) {
+    @include h9;
+
+    margin-top: 27px;
+  }
+
   @include breakpoint(tabletOnly) {
     margin-top: 35px;
   }
