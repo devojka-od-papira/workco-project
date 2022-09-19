@@ -9,7 +9,7 @@ import styles from './Header.module.scss';
 import closeIcon from '../../assets/icons/close.svg';
 import hamburgerIcon from '../../assets/icons/hamburger.svg';
 
-function Header() {
+const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const breakpoint = useBreakpoint();
   const menu = [
@@ -35,39 +35,39 @@ function Header() {
     },
   ];
   return (
-    <Container>
-      <Grid
-        className={cx(styles.header, {
-          [styles.divider]: breakpoint === 'sm',
-        })}
-      >
-        <Column
-          className={cx(
-            styles.logoMobileWrapper,
-            mobileMenuOpen && styles.menuOpen
-          )}
-          size={{ sm: 1, md: 2, lg: 2 }}
-        >
-          <Logo mobileMenuOpen={mobileMenuOpen} />
-        </Column>
-        <Column
-          className={styles.menuOpen}
-          size={{ sm: 3, md: 6, lg: 5 }}
-          offsetLeft={{ lg: 1 }}
-        >
-          {(mobileMenuOpen || breakpoint !== 'sm') && (
-            <Menu menu={menu} mobileMenuOpen={mobileMenuOpen} />
-          )}
-          {breakpoint === 'sm' && (
-            <Icon
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              icon={mobileMenuOpen ? closeIcon : hamburgerIcon}
-              mobileMenuOpen={mobileMenuOpen}
-            />
-          )}
-        </Column>
-      </Grid>
-    </Container>
+    <header
+      className={cx(
+        styles.header,
+        breakpoint === 'sm' && !mobileMenuOpen && styles.shadow
+      )}
+    >
+      <Container>
+        <Grid>
+          <Column
+            className={cx(mobileMenuOpen && styles.menu)}
+            size={{ sm: 1, md: 2, lg: 2 }}
+          >
+            <Logo mobileMenuOpen={mobileMenuOpen} />
+          </Column>
+          <Column
+            className={styles.menu}
+            size={{ sm: 3, md: 6, lg: 6 }}
+            offsetLeft={{ lg: 1 }}
+          >
+            {(mobileMenuOpen || breakpoint !== 'sm') && (
+              <Menu menu={menu} mobileMenuOpen={mobileMenuOpen} />
+            )}
+            {breakpoint === 'sm' && (
+              <Icon
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                icon={mobileMenuOpen ? closeIcon : hamburgerIcon}
+                mobileMenuOpen={mobileMenuOpen}
+              />
+            )}
+          </Column>
+        </Grid>
+      </Container>
+    </header>
   );
-}
+};
 export default Header;

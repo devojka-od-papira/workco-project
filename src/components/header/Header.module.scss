@@ -5,46 +5,24 @@
 
   @include breakpoint(mobileOnly) {
     height: 50px;
-    align-items: center;
     margin-bottom: 43px;
-
-    .menuMobileWrapper {
-      display: flex;
-      justify-content: flex-end;
-    }
   }
 
   @include breakpoint(tabletOnly) {
     margin-top: 40px;
-    display: flex;
-    align-items: flex-end;
+    margin-bottom: 89px;
   }
 
   @include breakpoint(desktop) {
-    display: flex;
-    align-items: flex-end;
     margin-top: 100px;
-    margin-bottom: 141px;
+    margin-bottom: 144px;
   }
 }
 
-.divider {
+.menu {
+  margin-top: 10px;
+}
+
+.shadow {
   box-shadow: 0 3px 2px -2px $secondary-gray;
-  position: absolute;
-  right: 0;
-  left: 0;
-  box-sizing: border-box;
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-}
-
-.menuOpen {
-  padding-left: 11px !important;
-  padding-right: 2px !important;
-}
-
-.logoMobileWrapper {
-  @include breakpoint(mobileOnly) {
-    padding-left: 2% !important;
-  }
 }

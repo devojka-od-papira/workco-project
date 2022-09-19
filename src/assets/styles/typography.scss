@@ -83,6 +83,12 @@
   font-size: 47px;
   font-weight: normal;
 }
+@mixin h8 {
+  @include noto-font;
+
+  font-size: 47px;
+  font-weight: normal;
+}
 
 @mixin h9 {
   @include noto-font;
