@@ -22,11 +22,13 @@
 }
 
 .title {
-  @include h7;
+  @include h3;
 
+  font-size: 47px;
+  font-weight: 700;
+  line-height: 64px;
   color: $color-light;
   margin-bottom: 6px;
-
 }
 
 .description {
@@ -35,7 +37,10 @@
   color: $color-light;
 
   @include breakpoint(mobileOnly) {
-    @include h9;
+    @include h2;
+
+    font-size: 24px;
+    line-height: 33px;
   }
 
 }

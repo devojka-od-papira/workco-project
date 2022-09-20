@@ -4,14 +4,10 @@
 
 .content {
   position: relative;
-  margin-bottom: 47px;
+  margin-bottom: 0;
 
-  @include breakpoint(mobileOnly) {
-    margin-bottom: 0;
-  }
-
-  @include breakpoint(tabletOnly) {
-    margin-bottom: 0;
+  @include breakpoint(desktop) {
+    margin-bottom: 47px;
   }
 }
 
@@ -27,6 +23,8 @@
 .title {
   @include h5;
 
+  font-size: 16px;
+  line-height: 22px;
   color: $color-light;
   padding-left: 23px;
 }

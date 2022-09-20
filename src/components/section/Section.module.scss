@@ -10,8 +10,10 @@
   padding-bottom: 20px;
 
   @include breakpoint(mobileOnly) {
-    @include h8;
+    @include h2;
 
+    font-size: 24px;
+    line-height: 33px;
     margin-bottom: 43px;
 
     &::after {
@@ -20,8 +22,10 @@
   }
 
   @include breakpoint(tabletOnly) {
-    @include h8;
+    @include h2;
 
+    font-size: 24px;
+    line-height: 33px;
     padding-bottom: 8px;
 
     &::after {

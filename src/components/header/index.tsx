@@ -51,7 +51,7 @@ const Header: React.FC = () => {
           </Column>
           <Column
             className={styles.menu}
-            size={{ sm: 3, md: 6, lg: 6 }}
+            size={{ sm: 3, md: 6, lg: 9 }}
             offsetLeft={{ lg: 1 }}
           >
             {(mobileMenuOpen || breakpoint !== 'sm') && (

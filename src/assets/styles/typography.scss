@@ -53,15 +53,6 @@
 
 @mixin h4 {
 
-  @include roboto-font;
-
-  font-size: 22px;
-  line-height: 27px;
-  font-weight: 400;
-}
-
-@mixin h5 {
-
   @include noto-font-bold;
 
   font-size: 20px;
@@ -69,36 +60,15 @@
   font-weight: 700;
 }
 
-@mixin h6 {
-
-  @include noto-font;
-
-  font-size: 20px;
-  font-weight: 400;
-}
-
-@mixin h7 {
-  @include noto-font;
-
-  font-size: 47px;
-  font-weight: normal;
-}
-@mixin h8 {
-  @include noto-font;
-
-  font-size: 47px;
-  font-weight: normal;
-}
-
-@mixin h9 {
-  @include noto-font;
+@mixin h5 {
+  @include noto-font-bold;
 
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
 }
 
-@mixin h10 {
+@mixin h6 {
   @include noto-font;
 
   font-size: 14px;
@@ -106,19 +76,11 @@
   line-height: 17px;
 }
 
-@mixin h11 {
-  @include noto-font;
+@mixin p {
 
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 22px;
-}
+  @include roboto-font;
 
-@mixin h12 {
-
-  @include noto-font-bold;
-
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  font-weight: 400;
 }

@@ -22,35 +22,30 @@
 }
 
 .moreNews {
-  @include h3;
+  @include h5;
 
+  font-size: 16px;
+  line-height: 22px;
   color: $color-dark;
 
-  @include breakpoint(mobileOnly) {
-    @include h11;
-  }
+  @include breakpoint(desktop) {
+    @include h2;
 
-  @include breakpoint(tabletOnly) {
-    @include h11;
+    font-size: 24px;
+    line-height: 33px;
   }
 }
 
 .moreNewsWrapper {
-  margin-top: 41px;
-  margin-bottom: 141px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 54px;
+  margin-top: 29px;
 
-  @include breakpoint(mobileOnly) {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 54px;
-    margin-top: 29px;
-  }
-
-  @include breakpoint(tabletOnly) {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 54px;
-    margin-top: 29px;
+  @include breakpoint(desktop) {
+    justify-content: flex-start;
+    margin-top: 41px;
+    margin-bottom: 141px;
   }
 }
 
@@ -59,8 +54,6 @@
   margin-top: 38px;
 
   @include breakpoint(mobileOnly) {
-    @include h9;
-
     margin-top: 27px;
   }
 

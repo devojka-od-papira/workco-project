@@ -7,8 +7,9 @@
 
 .ul {
   @include breakpoint(mobileOnly) {
-    @include h12;
+    @include h4;
 
+    line-height: 24px;
     display: block;
     flex-direction: column;
     margin-top: 50px;
@@ -32,9 +33,10 @@
     height: 100%;
     
     li {
-      @include h11;
+      @include h5;
 
       line-height: 19px;
+      font-size: 16px;
       margin-right: 26px;
 
       &:last-child {
@@ -49,8 +51,10 @@
     align-items: self-end;
 
     li {
-      @include h9;
+      @include h3;
 
+      line-height: 33px;
+      font-weight: 700;
       margin-right: 44px;
 
       &:last-child {
