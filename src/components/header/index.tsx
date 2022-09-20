@@ -37,8 +37,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={cx(
-        styles.header,
-        breakpoint === 'sm' && !mobileMenuOpen && styles.shadow
+        styles.header
       )}
     >
       <Container>
@@ -54,9 +53,7 @@ const Header: React.FC = () => {
             size={{ sm: 3, md: 6, lg: 9 }}
             offsetLeft={{ lg: 1 }}
           >
-            {(mobileMenuOpen || breakpoint !== 'sm') && (
-              <Menu menu={menu} mobileMenuOpen={mobileMenuOpen} />
-            )}
+            <Menu menu={menu} mobileMenuOpen={mobileMenuOpen} />
             {breakpoint === 'sm' && (
               <Icon
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

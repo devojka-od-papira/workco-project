@@ -13,7 +13,7 @@ interface MenuProps {
 }
 
 const Menu: React.FC<MenuProps> = ({ menu, mobileMenuOpen }) => (
-  <nav className={cx(styles.nav)}>
+  <nav className={cx(styles.nav, { [styles.nav__open]: mobileMenuOpen })}>
     <ul className={cx(styles.ul, styles.menuPosition && mobileMenuOpen)}>
       {menu.map((menuItem) => (
         <li className={cx(styles.menuItem)} key={menuItem.title}>

@@ -2,7 +2,6 @@
 @import "src/assets/styles/variable";
 
 .header {
-
   @include breakpoint(mobileOnly) {
     height: 50px;
     margin-bottom: 43px;
@@ -21,8 +20,4 @@
 
 .menu {
   margin-top: 10px;
-}
-
-.shadow {
-  box-shadow: 0 3px 2px -2px $secondary-gray;
 }

@@ -17,3 +17,27 @@
     }
   }
 }
+
+@mixin containerMobile {
+  @include breakpoint(mobileOnly) {
+    margin: 0 2%;
+  }
+}
+
+@mixin containerTablet {
+  @include breakpoint(tabletOnly) {
+    margin: 0 4%;
+  }
+}
+
+@mixin containerDesktop {
+  @include breakpoint(desktop) {
+    margin: 0 7%;
+  }
+}
+
+@mixin container {
+  @include containerMobile;
+  @include containerTablet;
+  @include containerDesktop;
+}
