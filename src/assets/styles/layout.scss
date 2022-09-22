@@ -20,19 +20,19 @@
 
 @mixin container-mobile {
   @include breakpoint(mobileOnly) {
-    margin: 0 2%;
+    margin: 0 9%;
   }
 }
 
 @mixin container-tablet {
   @include breakpoint(tabletOnly) {
-    margin: 0 4%;
+    margin: 0 10%;
   }
 }
 
 @mixin container-desktop {
   @include breakpoint(desktop) {
-    margin: 0 7%;
+    margin: 0 8%;
   }
 }
 
