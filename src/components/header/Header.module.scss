@@ -4,7 +4,7 @@
 .header {
   @include breakpoint(mobileOnly) {
     height: 50px;
-    margin-bottom: 43px;
+    margin-bottom: 33px;
   }
 
   @include breakpoint(tabletOnly) {

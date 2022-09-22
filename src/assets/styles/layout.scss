@@ -18,26 +18,26 @@
   }
 }
 
-@mixin containerMobile {
+@mixin container-mobile {
   @include breakpoint(mobileOnly) {
     margin: 0 2%;
   }
 }
 
-@mixin containerTablet {
+@mixin container-tablet {
   @include breakpoint(tabletOnly) {
     margin: 0 4%;
   }
 }
 
-@mixin containerDesktop {
+@mixin container-desktop {
   @include breakpoint(desktop) {
     margin: 0 7%;
   }
 }
 
 @mixin container {
-  @include containerMobile;
-  @include containerTablet;
-  @include containerDesktop;
+  @include container-mobile;
+  @include container-tablet;
+  @include container-desktop;
 }

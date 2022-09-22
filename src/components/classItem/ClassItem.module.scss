@@ -4,10 +4,14 @@
 
 .content {
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 27px;
 
-  @include breakpoint(desktop) {
-    margin-bottom: 47px;
+  @include breakpoint(tabletOnly) {
+    margin-bottom: 19px;
+  }
+
+  @include breakpoint(mobileOnly) {
+    margin-bottom: 0;
   }
 }
 

@@ -2,9 +2,14 @@
 @import "src/assets/styles/layout";
 
 .wrapper {
-  margin-top: 30px;
+  margin-top: 29px;
+
   @include breakpoint(mobileOnly) {
-    margin-top: 43px;
+    margin-top: 27px;
+
+    &:first-child {
+      margin-top: 39px;
+    }
   }
   @include breakpoint(tabletOnly) {
     margin-top: 35px;

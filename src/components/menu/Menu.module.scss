@@ -13,7 +13,6 @@
     width: 100%;
     height: 10px;
     z-index: 1;
-
     overflow: hidden;
     transition: height ease 0.6s;
     box-shadow: 0 6px 4px 0 #4e4e4e24;
@@ -25,8 +24,9 @@
 }
 
 .ul {
-  @include containerMobile;
+  @include container-mobile;
   @include h4;
+
   line-height: 24px;
 
   @include breakpoint(mobileOnly) {

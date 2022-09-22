@@ -26,6 +26,7 @@
 
 @font-face {
   font-family: 'Roboto Serif';
+  font-weight: 400;
   src: url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf"),
   url("../fonts/Roboto/Roboto-Regular.eot") format("eot"),
   url("../fonts/Roboto/Roboto-Regular.otf") format("otf"),
@@ -36,7 +37,8 @@
 // Roboto Bold
 
 @font-face {
-  font-family: 'Roboto Serif Bold';
+  font-family: 'Roboto Serif';
+  font-weight: 700;
   src: url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf"),
   url("../fonts/Roboto/Roboto-Bold.eot") format("eof"),
   url("../fonts/Roboto/Roboto-Bold.otf") format("otf"),

@@ -47,7 +47,7 @@ const News: React.FC = () => {
         {newsData.map((newsItem) => (
           <Column
             className={styles.wrapper}
-            size={{ lg: 6 }}
+            size={{ md: 4, lg: 6 }}
             key={newsItem.title}
           >
             <NewsItem

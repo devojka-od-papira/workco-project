@@ -35,11 +35,7 @@ const Header: React.FC = () => {
     },
   ];
   return (
-    <header
-      className={cx(
-        styles.header
-      )}
-    >
+    <header className={cx(styles.header)}>
       <Container>
         <Grid>
           <Column
