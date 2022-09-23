@@ -42,11 +42,6 @@
   margin-bottom: 24px;
   margin-top: 38px;
 
-  @include breakpoint(tabletOnly) {
-    margin-bottom: 16px;
-    margin-top: 39px;
-  }
-
   @include breakpoint(mobileOnly) {
     margin-bottom: 27px;
     margin-top: 0;
@@ -55,6 +50,11 @@
       margin-top: 39px;
 
     }
+  }
+
+  @include breakpoint(tabletOnly) {
+    margin-bottom: 16px;
+    margin-top: 39px;
   }
 }
 

@@ -2,17 +2,17 @@
 @import "src/assets/styles/layout";
 
 .wrapper {
-  margin-top: 29px;
+  margin-top: $mt-29;
 
   @include breakpoint(mobileOnly) {
-    margin-top: 27px;
+    margin-top: $mt-27;
 
     &:first-child {
-      margin-top: 39px;
+      margin-top: $mt-39;
     }
   }
   @include breakpoint(tabletOnly) {
-    margin-top: 35px;
+    margin-top: $mt-35;
   }
 }
 

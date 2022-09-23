@@ -18,7 +18,7 @@
     &::after {
       @include container-mobile;
 
-      right: -14% !important;
+      right: - $mr-2 !important;
     }
   }
 
@@ -30,7 +30,7 @@
     padding-bottom: 8px;
 
     &::after {
-      right: -4% !important;
+      right: - $mr-2 !important;
     }
   }
 

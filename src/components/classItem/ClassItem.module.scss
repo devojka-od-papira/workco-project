@@ -4,14 +4,14 @@
 
 .content {
   position: relative;
-  margin-bottom: 27px;
+  margin-bottom: $mb-27;
 
   @include breakpoint(tabletOnly) {
-    margin-bottom: 19px;
+    margin-bottom: $mb-19;
   }
 
   @include breakpoint(mobileOnly) {
-    margin-bottom: 0;
+    margin-bottom: $mb-0;
   }
 }
 
@@ -36,7 +36,7 @@
 .imageWrapper {
   width: 100%;
   height: 332px;
-  margin-top: 8px;
+  margin-top: $mt-8;
   overflow: hidden;
 }
 
