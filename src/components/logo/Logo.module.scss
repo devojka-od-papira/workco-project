@@ -8,6 +8,7 @@
 
   @include breakpoint(mobileOnly) {
     height: 31px;
+    width: 72px;
   }
 
   @include breakpoint(tabletOnly) {
@@ -22,7 +23,7 @@
 
   @include breakpoint(mobileOnly) {
     height: 31px;
-    width: 100%;
+    width: 72px;
     margin-top: 10px;
   }
 

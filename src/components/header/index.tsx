@@ -4,7 +4,7 @@ import cx from 'classnames';
 import Container from '../container';
 import Menu from '../menu';
 import Logo from '../logo';
-import Icon from '../icon';
+import MenuButton from '../MenuButton';
 import styles from './Header.module.scss';
 import closeIcon from '../../assets/icons/close.svg';
 import hamburgerIcon from '../../assets/icons/hamburger.svg';
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
           >
             <Menu menu={menu} mobileMenuOpen={mobileMenuOpen} />
             {breakpoint === 'sm' && (
-              <Icon
+              <MenuButton
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 icon={mobileMenuOpen ? closeIcon : hamburgerIcon}
                 mobileMenuOpen={mobileMenuOpen}

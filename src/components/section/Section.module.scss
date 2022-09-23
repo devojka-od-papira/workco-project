@@ -8,6 +8,7 @@
   text-transform: uppercase;
   color: $primary-gray;
   position: relative;
+  display: inline-block;
 
   @include breakpoint(mobileOnly) {
     @include h2;
@@ -18,7 +19,7 @@
     &::after {
       @include container-mobile;
 
-      right: - $mr-2 !important;
+      right: - $container-mobile-margin !important;
     }
   }
 
@@ -30,7 +31,7 @@
     padding-bottom: 8px;
 
     &::after {
-      right: - $mr-2 !important;
+      right: 0;
     }
   }
 

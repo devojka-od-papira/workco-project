@@ -25,7 +25,6 @@
 
 .ul {
   @include container-mobile;
-  @include h4;
 
   line-height: 24px;
 
@@ -60,6 +59,7 @@
     li {
       @include h3;
 
+      font-size: 18px;
       line-height: 33px;
       font-weight: 700;
       margin-right: 44px;
