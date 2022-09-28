@@ -42,19 +42,17 @@
 }
 
 .title {
-  @include h2;
+  @include h4;
 
   color: $color-dark;
   margin-bottom: 22px;
 
   @include breakpoint(mobileOnly) {
-    @include h4;
-
     margin-bottom: 0;
   }
 
-  @include breakpoint(tabletOnly) {
-    @include h4;
+  @include breakpoint(desktop) {
+    @include h2;
   }
 }
 

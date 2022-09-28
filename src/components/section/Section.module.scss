@@ -3,19 +3,16 @@
 @import "src/assets/styles/layout";
 
 .title {
-  @include h1;
+  @include h2;
 
+  font-size: 24px;
+  line-height: 33px;
   text-transform: uppercase;
   color: $primary-gray;
   position: relative;
   display: inline-block;
 
   @include breakpoint(mobileOnly) {
-    @include h2;
-
-    font-size: 24px;
-    line-height: 33px;
-
     &::after {
       @include container-mobile;
 
@@ -24,15 +21,16 @@
   }
 
   @include breakpoint(tabletOnly) {
-    @include h2;
-
-    font-size: 24px;
-    line-height: 33px;
     padding-bottom: 8px;
 
     &::after {
       right: 0;
     }
+  }
+
+  @include  breakpoint(desktop) {
+    @include h1;
+
   }
 
   &::after {
