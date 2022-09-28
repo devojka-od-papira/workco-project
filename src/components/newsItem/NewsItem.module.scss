@@ -31,15 +31,11 @@
   color: $third-gray;
 
   @include breakpoint(mobileOnly) {
-    @include p;
-
     font-size: 14px;
     line-height: 17px;
   }
 
   @include breakpoint(tabletOnly) {
-    @include p;
-
     font-size: 16px;
     line-height: 19px;
   }

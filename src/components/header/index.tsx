@@ -38,17 +38,10 @@ const Header: React.FC = () => {
     <header className={cx(styles.header)}>
       <Container>
         <Grid>
-          <Column
-            className={cx(mobileMenuOpen && styles.menu)}
-            size={{ sm: 1, md: 2, lg: 2 }}
-          >
-            <Logo mobileMenuOpen={mobileMenuOpen} />
+          <Column size={{ sm: 1, md: 2, lg: 2 }}>
+            <Logo />
           </Column>
-          <Column
-            className={styles.menu}
-            size={{ sm: 3, md: 6, lg: 9 }}
-            offsetLeft={{ lg: 1 }}
-          >
+          <Column size={{ sm: 3, md: 6, lg: 9 }} offsetLeft={{ lg: 1 }}>
             <Menu menu={menu} mobileMenuOpen={mobileMenuOpen} />
             {breakpoint === 'sm' && (
               <MenuButton

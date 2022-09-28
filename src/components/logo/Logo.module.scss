@@ -9,21 +9,6 @@
   @include breakpoint(mobileOnly) {
     height: 31px;
     width: 72px;
-  }
-
-  @include breakpoint(tabletOnly) {
-    height: 60px;
-  }
-}
-
-.logoSmall {
-  width: 100%;
-  background-color: $primary-gray;
-  height: 103px;
-
-  @include breakpoint(mobileOnly) {
-    height: 31px;
-    width: 72px;
     margin-top: 10px;
   }
 
