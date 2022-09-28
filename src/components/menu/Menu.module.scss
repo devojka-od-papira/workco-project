@@ -57,7 +57,7 @@
     align-items: self-end;
 
     li {
-      @include h3;
+      @include noto-font;
 
       font-size: 18px;
       line-height: 33px;

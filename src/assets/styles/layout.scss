@@ -1,3 +1,5 @@
+@import "variable";
+
 @mixin breakpoint($point) {
   @if $point==desktop {
     @media (min-width: 901px) {
@@ -20,19 +22,19 @@
 
 @mixin container-mobile {
   @include breakpoint(mobileOnly) {
-    margin: 0 9%;
+    margin: 0 $container-mobile-margin;
   }
 }
 
 @mixin container-tablet {
   @include breakpoint(tabletOnly) {
-    margin: 0 10%;
+    margin: 0 $container-tablet-margin;
   }
 }
 
 @mixin container-desktop {
   @include breakpoint(desktop) {
-    margin: 0 8%;
+    margin: 0 $container-desktop-margin;
   }
 }
 
