@@ -3,7 +3,6 @@
 
 .logo {
   width: 100%;
-  background-color: $primary-gray;
   height: 103px;
 
   @include breakpoint(mobileOnly) {
