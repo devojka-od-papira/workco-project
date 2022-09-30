@@ -4,6 +4,9 @@
   background-color: $color-light;
   border: none;
   cursor: pointer;
+  position: absolute;
+  right: $container-mobile-margin;
+  top: 19px;
 }
 
 .menuClosed {

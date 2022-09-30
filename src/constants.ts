@@ -21,9 +21,9 @@ export const gridSettings: GridSettings = {
   },
   gridHelperColumnColor: 'rgba(0, 0, 0, .05)',
   gridHelperMargins: {
-    sm: '2%',
-    md: '4%',
-    lg: '7%',
+    sm: '9%',
+    md: '10%',
+    lg: '8%',
   },
   prefixes: {
     grid: 'g',

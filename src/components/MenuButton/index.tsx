@@ -1,14 +1,18 @@
 import React from 'react';
 import cx from 'classnames';
-import styles from './Icon.module.scss';
+import styles from './MenuButton.module.scss';
 
-export interface IconProps {
+export interface MenuButtonProps {
   icon: string;
   onClick: () => void;
   mobileMenuOpen: boolean;
 }
 
-const Icon: React.FC<IconProps> = ({ icon, onClick, mobileMenuOpen }) => (
+const MenuButton: React.FC<MenuButtonProps> = ({
+  icon,
+  onClick,
+  mobileMenuOpen,
+}) => (
   <button
     className={cx(styles.menuButton, !mobileMenuOpen && styles.menuClosed)}
     onClick={onClick}
@@ -17,4 +21,4 @@ const Icon: React.FC<IconProps> = ({ icon, onClick, mobileMenuOpen }) => (
   </button>
 );
 
-export default Icon;
+export default MenuButton;

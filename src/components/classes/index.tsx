@@ -61,7 +61,7 @@ const Classes: React.FC = () => {
       <Grid>
         {classData.map((classItem) => (
           <Column
-            size={{ lg: 3 }}
+            size={{ md: 4, lg: 3 }}
             key={classItem.title}
             className={styles.wrapper}
           >

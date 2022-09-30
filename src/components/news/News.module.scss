@@ -1,9 +1,8 @@
 @import "src/assets/styles/typography";
+@import "src/assets/styles/layout";
 @import "src/assets/styles/variable";
 
 .section {
-  margin-bottom: 50px;
-
   h3 {
     &::after {
       background-color: $color-blue;
@@ -12,18 +11,50 @@
 }
 
 .moreNews {
-  @include h3;
+  @include h5;
 
+  font-size: 16px;
+  line-height: 22px;
   color: $color-dark;
+
+  @include breakpoint(desktop) {
+    @include h2;
+
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 .moreNewsWrapper {
-  margin-top: 41px;
-  margin-bottom: 141px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 54px;
+  margin-top: 29px;
+
+  @include breakpoint(desktop) {
+    justify-content: flex-start;
+    margin-top: 41px;
+    margin-bottom: 141px;
+  }
 }
 
 .wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   margin-top: 38px;
+
+  @include breakpoint(mobileOnly) {
+    margin-bottom: 27px;
+    margin-top: 0;
+
+    &:first-child {
+      margin-top: 39px;
+
+    }
+  }
+
+  @include breakpoint(tabletOnly) {
+    margin-bottom: 16px;
+    margin-top: 39px;
+  }
 }
 

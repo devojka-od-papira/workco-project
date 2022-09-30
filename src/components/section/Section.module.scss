@@ -1,12 +1,37 @@
 @import "src/assets/styles/typography";
 @import "src/assets/styles/variable";
+@import "src/assets/styles/layout";
 
 .title {
-  @include h1;
+  @include h2;
 
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
   color: $primary-gray;
   position: relative;
-  padding-bottom: 20px;
+  display: inline-block;
+
+  @include breakpoint(mobileOnly) {
+    &::after {
+      @include container-mobile;
+
+      right: - $container-mobile-margin !important;
+    }
+  }
+
+  @include breakpoint(tabletOnly) {
+    padding-bottom: 8px;
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  @include  breakpoint(desktop) {
+    @include h1;
+
+  }
 
   &::after {
     background-color: $secondary-gray;

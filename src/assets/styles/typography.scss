@@ -12,21 +12,9 @@
   font-stretch: normal;
 }
 
-@mixin noto-font-bold {
-  font-family: 'Noto Serif Bold', serif;
-  font-style: normal;
-  font-stretch: normal;
-}
-
-@mixin roboto-font-bold {
-  font-family: "Noto Serif Bold", serif;
-  font-style: normal;
-  font-stretch: normal;
-}
-
 @mixin h1 {
   
-  @include noto-font-bold;
+  @include noto-font;
 
   font-size: 48px;
   line-height: 65px;
@@ -35,7 +23,7 @@
 
 @mixin h2 {
 
-  @include noto-font-bold;
+  @include noto-font;
 
   font-size: 28px;
   line-height: 38px;
@@ -48,38 +36,36 @@
 
   font-size: 24px;
   line-height: 33px;
-  font-weight: 400;
 }
 
 @mixin h4 {
 
-  @include roboto-font;
-
-  font-size: 22px;
-  line-height: 27px;
-  font-weight: 400;
-}
-
-@mixin h5 {
-
-  @include noto-font-bold;
+  @include noto-font;
 
   font-size: 20px;
   line-height: 27px;
   font-weight: 700;
 }
 
-@mixin h6 {
-
+@mixin h5 {
   @include noto-font;
 
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
 }
 
-@mixin h7 {
+@mixin h6 {
   @include noto-font;
 
-  font-size: 47px;
-  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@mixin p {
+
+  @include roboto-font;
+
+  font-size: 22px;
+  line-height: 27px;
 }

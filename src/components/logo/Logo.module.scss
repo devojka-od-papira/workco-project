@@ -1,27 +1,15 @@
 @import "src/assets/styles/layout";
 @import "src/assets/styles/variable";
 
-.logo{
+.logo {
   width: 100%;
   background-color: $primary-gray;
   height: 103px;
 
   @include breakpoint(mobileOnly) {
     height: 31px;
-  }
-
-  @include breakpoint(tabletOnly) {
-    height: 60px;
-  }
-}
-
-.logoSmall {
-  width: 100%;
-  background-color: $primary-gray;
-  height: 103px;
-
-  @include breakpoint(mobileOnly) {
-    height: 31px;
+    width: 72px;
+    margin-top: 10px;
   }
 
   @include breakpoint(tabletOnly) {

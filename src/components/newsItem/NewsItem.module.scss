@@ -1,5 +1,6 @@
 @import "src/assets/styles/typography";
 @import "src/assets/styles/variable";
+@import "src/assets/styles/layout";
 
 .content {
   display: flex;
@@ -10,6 +11,14 @@
   height: 218px;
   margin-bottom: 60px;
   overflow: hidden;
+
+  @include breakpoint(mobileOnly) {
+    margin-bottom: 14px;
+  }
+
+  @include breakpoint(tabletOnly) {
+    margin-bottom: 19px;
+  }
 }
 
 .image {
@@ -17,17 +26,34 @@
 }
 
 .description {
-  @include h4;
+  @include p;
 
-  height: 218px;
   color: $third-gray;
+
+  @include breakpoint(mobileOnly) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @include breakpoint(tabletOnly) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .title {
-  @include h2;
+  @include h4;
 
   color: $color-dark;
   margin-bottom: 22px;
+
+  @include breakpoint(mobileOnly) {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint(desktop) {
+    @include h2;
+  }
 }
 
 .item {
