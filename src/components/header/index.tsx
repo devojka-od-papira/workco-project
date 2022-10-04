@@ -10,7 +10,7 @@ import closeIcon from '../../assets/icons/close.svg';
 import hamburgerIcon from '../../assets/icons/hamburger.svg';
 
 const Header: React.FC = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const breakpoint = useBreakpoint();
   const menu = [
     {
@@ -42,12 +42,12 @@ const Header: React.FC = () => {
             <Logo />
           </Column>
           <Column size={{ sm: 3, md: 6, lg: 9 }} offsetLeft={{ lg: 1 }}>
-            <Menu menu={menu} mobileMenuOpen={mobileMenuOpen} />
-            {breakpoint === 'sm' && (
+            <Menu menu={menu} menuOpen={menuOpen} />
+            {breakpoint !== 'lg' && (
               <MenuButton
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                icon={mobileMenuOpen ? closeIcon : hamburgerIcon}
-                mobileMenuOpen={mobileMenuOpen}
+                onClick={() => setMenuOpen(!menuOpen)}
+                icon={menuOpen ? closeIcon : hamburgerIcon}
+                menuOpen={menuOpen}
               />
             )}
           </Column>

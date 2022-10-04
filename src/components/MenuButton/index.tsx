@@ -5,16 +5,12 @@ import styles from './MenuButton.module.scss';
 export interface MenuButtonProps {
   icon: string;
   onClick: () => void;
-  mobileMenuOpen: boolean;
+  menuOpen: boolean;
 }
 
-const MenuButton: React.FC<MenuButtonProps> = ({
-  icon,
-  onClick,
-  mobileMenuOpen,
-}) => (
+const MenuButton: React.FC<MenuButtonProps> = ({ icon, onClick, menuOpen }) => (
   <button
-    className={cx(styles.menuButton, !mobileMenuOpen && styles.menuClosed)}
+    className={cx(styles.menuButton, !menuOpen && styles.menuClosed)}
     onClick={onClick}
   >
     <img src={icon} alt="menu" />

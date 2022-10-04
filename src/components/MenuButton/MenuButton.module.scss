@@ -1,4 +1,5 @@
 @import "src/assets/styles/variable";
+@import "src/assets/styles/layout";
 
 .menuButton {
   background-color: $color-light;
@@ -7,6 +8,10 @@
   position: absolute;
   right: $container-mobile-margin;
   top: 19px;
+
+  @include breakpoint(tabletOnly){
+    right: $container-tablet-margin;
+  }
 }
 
 .menuClosed {

@@ -8,8 +8,8 @@
   }
 
   @include breakpoint(tabletOnly) {
-    margin-top: 40px;
-    margin-bottom: 89px;
+    height: 72px;
+    margin-bottom: 112px;
   }
 
   @include breakpoint(desktop) {
