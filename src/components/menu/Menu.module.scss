@@ -4,9 +4,8 @@
 .nav {
   height: 100%;
 
-  @include breakpoint(mobileOnly) {
+  &__compact {
     flex-direction: column;
-    top: 40px;
     position: absolute;
     left: 0;
     background-color: $color-light;
@@ -21,34 +20,32 @@
   &__open {
     height: 100%;
   }
+
+  @include breakpoint(mobileOnly) {
+    top: 40px;
+
+  }
+
+  @include breakpoint(tabletOnly) {
+    top: 60px;
+
+  }
 }
 
-.ul {
-  @include container-mobile;
 
+.ul {
   line-height: 24px;
 
   @include breakpoint(mobileOnly) {
+    @include container-mobile;
+
     padding-top: 49px;
   }
 
   @include breakpoint(tabletOnly) {
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
+    @include container-tablet;
 
-    li {
-      @include h5;
-
-      line-height: 19px;
-      font-size: 16px;
-      margin-right: 26px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+    padding-top: 59px;
   }
 
   @include breakpoint(desktop) {
@@ -75,13 +72,12 @@
   @include h3;
 
   text-transform: uppercase;
-
-  @include breakpoint(mobileOnly) {
-    margin: 10px 0;
-  }
+  margin: 10px 0;
 
   @include breakpoint(tabletOnly) {
-    @include h6;
+    @include h4;
+
+    line-height: 24px;
   }
 }
 

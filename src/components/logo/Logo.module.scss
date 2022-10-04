@@ -12,6 +12,8 @@
   }
 
   @include breakpoint(tabletOnly) {
-    height: 60px;
+    height: 50px;
+    width: 115px;
+    margin-top: 10px;
   }
 }
