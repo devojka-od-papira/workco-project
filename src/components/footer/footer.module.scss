@@ -1,15 +1,6 @@
 @import "src/assets/styles/typography";
 @import "src/assets/styles/variable";
 
-.noContent {
-  height: 268px;
-  background-color: $color-light-gray;
-
-  @include breakpoint(mobileOnly) {
-    height: 40px;
-  }
-}
-
 .content {
   height: 426px;
   background-color: $color-dark-gray ;

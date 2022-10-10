@@ -4,6 +4,7 @@ import Section from '../../components/section';
 import styles from './NewsView.module.scss';
 import MainNews from '../../components/mainNews';
 import News from '../../components/news';
+import Footer from '../../components/footer';
 
 const NewsView = (): ReactElement => (
   <>
@@ -18,6 +19,7 @@ const NewsView = (): ReactElement => (
         </div>
       }
     />
+    <Footer />
   </>
 );
 
