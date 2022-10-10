@@ -1,0 +1,33 @@
+@import "src/assets/styles/variable";
+@import "src/assets/styles/typography";
+
+.section {
+  padding-top: 63px;
+  padding-bottom: 95px;
+
+  h3 {
+    color: $color-blue;
+
+    &::after {
+      background-color: transparent;
+    }
+  }
+}
+
+
+
+.moreNewsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  @include p;
+
+  border: none;
+  padding: 19px 53px;
+  border-radius: 10px;
+  background-color: $color-blue;
+  color: $color-light;
+}

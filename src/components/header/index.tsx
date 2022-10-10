@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   const menu = [
     {
       title: 'Home',
-      path: '',
+      path: '/',
     },
     {
       title: 'Classes',
@@ -23,7 +23,7 @@ const Header: React.FC = () => {
     },
     {
       title: 'News',
-      path: '',
+      path: '/news',
     },
     {
       title: 'Gallery',

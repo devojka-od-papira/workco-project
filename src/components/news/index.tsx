@@ -8,7 +8,12 @@ import Mexico from '../../assets/images/mexico.jpeg';
 import AbstractPainter from '../../assets/images/abstract-painter.jpeg';
 import Archeology from '../../assets/images/arh.jpeg';
 
-const News: React.FC = () => {
+interface NewsProps {
+  hideTitle?: boolean | undefined;
+  button: React.ReactElement;
+}
+
+const News: React.FC<NewsProps> = ({ hideTitle = false, button }) => {
   const newsData = [
     {
       title: 'Prism of Relations: the 2022 Toronto Biennial',
@@ -42,7 +47,7 @@ const News: React.FC = () => {
     },
   ];
   return (
-    <Section classNames={styles.section} title="News">
+    <Section hideTitle={hideTitle} classNames={styles.section} title="News">
       <Grid>
         {newsData.map((newsItem) => (
           <Column
@@ -59,15 +64,7 @@ const News: React.FC = () => {
           </Column>
         ))}
       </Grid>
-      <Grid>
-        <Column size={{ lg: 2 }}>
-          <div className={styles.moreNewsWrapper}>
-            <a className={styles.moreNews} href="https://www.google.com">
-              More news
-            </a>
-          </div>
-        </Column>
-      </Grid>
+      <Grid>{button}</Grid>
     </Section>
   );
 };

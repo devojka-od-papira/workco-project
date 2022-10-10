@@ -1,17 +1,14 @@
 import React, { ReactElement } from 'react';
-import 'light-react-grid/dist/index.css';
-import Header from './components/header';
-import News from './components/news';
-import Classes from './components/classes';
-import Footer from './components/footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './views/home';
+import NewsView from './views/newsView';
 
 const App = (): ReactElement => (
-  <>
-    <Header />
-    <News />
-    <Classes />
-    <Footer />
-  </>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/news" element={<NewsView />} />
+    </Routes>
+  </BrowserRouter>
 );
-
 export default App;
