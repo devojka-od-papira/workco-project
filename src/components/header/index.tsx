@@ -5,6 +5,7 @@ import Container from '../container';
 import Menu from '../menu';
 import Logo from '../logo';
 import MenuButton from '../MenuButton';
+import { routes } from '../../routes';
 import styles from './Header.module.scss';
 import closeIcon from '../../assets/icons/close.svg';
 import hamburgerIcon from '../../assets/icons/hamburger.svg';
@@ -12,28 +13,6 @@ import hamburgerIcon from '../../assets/icons/hamburger.svg';
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const breakpoint = useBreakpoint();
-  const menu = [
-    {
-      title: 'Home',
-      path: '/',
-    },
-    {
-      title: 'Classes',
-      path: '',
-    },
-    {
-      title: 'News',
-      path: '/news',
-    },
-    {
-      title: 'Gallery',
-      path: '',
-    },
-    {
-      title: 'About us',
-      path: '',
-    },
-  ];
   return (
     <header className={cx(styles.header)}>
       <Container>
@@ -42,7 +21,7 @@ const Header: React.FC = () => {
             <Logo />
           </Column>
           <Column size={{ sm: 3, md: 6, lg: 9 }} offsetLeft={{ lg: 1 }}>
-            <Menu menu={menu} menuOpen={menuOpen} />
+            <Menu menu={routes} menuOpen={menuOpen} />
             {breakpoint !== 'lg' && (
               <MenuButton
                 onClick={() => setMenuOpen(!menuOpen)}

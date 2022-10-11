@@ -1,25 +1,24 @@
 import React from 'react';
+import cx from 'classnames';
 import styles from './Section.module.scss';
 import Container from '../container';
 
 interface SectionProps {
-  title: string;
+  title?: string;
   classNames: string;
-  hideTitle?: boolean;
 }
 
-const Section: React.FC<SectionProps> = ({
-  title,
-  children,
-  classNames,
-  hideTitle = false,
-}) => (
+const Section: React.FC<SectionProps> = ({ title, children, classNames }) => (
   <Container>
-    {!hideTitle && (
-      <div className={classNames}>
-        <h3 className={styles.title}>{title}</h3>
-      </div>
-    )}
+    <div className={classNames}>
+      <h3
+        className={cx({
+          [styles.title]: title,
+        })}
+      >
+        {title}
+      </h3>
+    </div>
     {children}
   </Container>
 );

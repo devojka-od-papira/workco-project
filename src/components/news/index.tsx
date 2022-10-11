@@ -7,13 +7,15 @@ import Toronto from '../../assets/images/toronto.jpeg';
 import Mexico from '../../assets/images/mexico.jpeg';
 import AbstractPainter from '../../assets/images/abstract-painter.jpeg';
 import Archeology from '../../assets/images/arh.jpeg';
+import Button from '../button';
 
 interface NewsProps {
-  hideTitle?: boolean | undefined;
-  button: React.ReactElement;
+  title?: string;
+  buttonText: string;
+  classNames?: string;
 }
 
-const News: React.FC<NewsProps> = ({ hideTitle = false, button }) => {
+const News: React.FC<NewsProps> = ({ title, buttonText, classNames }) => {
   const newsData = [
     {
       title: 'Prism of Relations: the 2022 Toronto Biennial',
@@ -47,7 +49,7 @@ const News: React.FC<NewsProps> = ({ hideTitle = false, button }) => {
     },
   ];
   return (
-    <Section hideTitle={hideTitle} classNames={styles.section} title="News">
+    <Section classNames={styles.section} title={title}>
       <Grid>
         {newsData.map((newsItem) => (
           <Column
@@ -64,7 +66,9 @@ const News: React.FC<NewsProps> = ({ hideTitle = false, button }) => {
           </Column>
         ))}
       </Grid>
-      <Grid>{button}</Grid>
+      <div className={classNames}>
+        <Button text={buttonText} />
+      </div>
     </Section>
   );
 };

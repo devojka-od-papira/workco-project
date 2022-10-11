@@ -1,10 +1,15 @@
 @import "src/assets/styles/typography";
 @import 'src/assets/styles/variable';
 
-.img {
+.mainImageWrapper {
   width: 100%;
   height: 598px;
-  background-color: $third-gray;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .title {
@@ -12,7 +17,7 @@
 
 }
 
-.news {
+.shortText {
   @include p;
 
   margin-top: 40px;

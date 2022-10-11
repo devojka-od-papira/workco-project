@@ -26,5 +26,4 @@ const NewsItem: FC<NewsItemProps> = ({ title, src, description, alt }) => (
     </Grid>
   </div>
 );
-
 export default NewsItem;
