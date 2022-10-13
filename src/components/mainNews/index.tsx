@@ -1,22 +1,25 @@
 import React from 'react';
 import Container from '../container';
 import styles from './MainNews.module.scss';
-import Toronto from '../../assets/images/toronto.jpeg';
 
-const MainNews: React.FC = () => (
+type NewsData = {
+  title: string;
+  src: string;
+  alt: string;
+  description: string;
+};
+
+interface MainNewsProps {
+  newsData: NewsData;
+}
+const MainNews: React.FC<MainNewsProps> = ({ newsData }) => (
   <Container>
     <div className={styles.content}>
-      <h2 className={styles.title}>
-        Prism of Relations: the 2022 Toronto Biennial
-      </h2>
+      <h2 className={styles.title}>{newsData.title}</h2>
       <div className={styles.mainImageWrapper}>
-        <img className={styles.img} src={Toronto} alt="toronto" />
+        <img className={styles.img} src={newsData.src} alt={newsData.alt} />
       </div>
-      <p className={styles.shortText}>
-        The biennial`s curators asked how land might be an archive, prompting
-        reflections on human conflicts over land as well as visions for
-        alternate relations.
-      </p>
+      <p className={styles.shortText}>{newsData.description}</p>
     </div>
   </Container>
 );
