@@ -10,11 +10,11 @@ type MenuTypes = {
 };
 
 interface MenuProps {
-  menu: MenuTypes[];
   menuOpen: boolean;
+  menu: MenuTypes[];
 }
 
-const Menu: React.FC<MenuProps> = ({ menu, menuOpen }) => {
+const Menu: React.FC<MenuProps> = ({ menuOpen, menu }) => {
   const breakpoint = useBreakpoint();
   const location = useLocation();
   return (
@@ -25,7 +25,7 @@ const Menu: React.FC<MenuProps> = ({ menu, menuOpen }) => {
       })}
     >
       <ul className={cx(styles.ul, styles.menuPosition && menuOpen)}>
-        {menu.map((menuItem) => (
+        {menu.map((menuItem: MenuTypes) => (
           <li className={cx(styles.menuItem)} key={menuItem.title}>
             <a
               href={menuItem.path}

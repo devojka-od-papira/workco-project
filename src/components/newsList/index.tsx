@@ -3,13 +3,11 @@ import { Column, Grid } from 'light-react-grid';
 import Container from '../../components/container';
 import styles from '../../views/newsView/NewsView.module.scss';
 import NewsItem from '../newsItem';
-import '../../types/global.d.ts';
 
 type NewsData = {
   title: string;
   description: string;
-  src: string;
-  alt: string;
+  image: Image;
 };
 
 interface NewsListProps {
@@ -27,9 +25,9 @@ const NewsList: React.FC<NewsListProps> = ({ newsData }) => (
         >
           <NewsItem
             title={newsItem.title}
-            src={newsItem.src}
+            src={newsItem.image.src}
             description={newsItem.description}
-            alt={newsItem.alt}
+            alt={newsItem.image.alt}
           />
         </Column>
       ))}

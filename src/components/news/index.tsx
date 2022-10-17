@@ -7,15 +7,8 @@ import Toronto from '../../assets/images/toronto.jpeg';
 import Mexico from '../../assets/images/mexico.jpeg';
 import AbstractPainter from '../../assets/images/abstract-painter.jpeg';
 import Archeology from '../../assets/images/arh.jpeg';
-import Button from '../button';
 
-interface NewsProps {
-  title?: string;
-  buttonText: string;
-  classNames?: string;
-}
-
-const News: React.FC<NewsProps> = ({ title, buttonText, classNames }) => {
+const News: React.FC = () => {
   const newsData = [
     {
       title: 'Prism of Relations: the 2022 Toronto Biennial',
@@ -49,7 +42,7 @@ const News: React.FC<NewsProps> = ({ title, buttonText, classNames }) => {
     },
   ];
   return (
-    <Section classNames={styles.section} title={title}>
+    <Section classNames={styles.section} title="News">
       <Grid>
         {newsData.map((newsItem) => (
           <Column
@@ -66,9 +59,15 @@ const News: React.FC<NewsProps> = ({ title, buttonText, classNames }) => {
           </Column>
         ))}
       </Grid>
-      <div className={classNames}>
-        <Button text={buttonText} />
-      </div>
+      <Grid>
+        <Column size={{ lg: 2 }}>
+          <div className={styles.moreNewsWrapper}>
+            <a className={styles.moreNews} href="https://www.google.com">
+              More news
+            </a>
+          </div>
+        </Column>
+      </Grid>
     </Section>
   );
 };

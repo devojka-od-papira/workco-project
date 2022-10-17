@@ -10,13 +10,6 @@
   border-radius: 10px;
   background-color: $color-blue;
   color: $color-light;
-}
-
-.anchorButton {
-  @include p;
-
-  border: none;
-  background-color: transparent;
-  text-decoration: underline;
-  color: $color-dark;
+  display: flex;
+  margin: 0 auto;
 }
