@@ -1,7 +1,7 @@
 import React from 'react';
 import { Column, Grid } from 'light-react-grid';
 import Container from '../../components/container';
-import styles from '../../views/newsView/NewsView.module.scss';
+import styles from './NewsList.module.scss';
 import NewsItem from '../newsItem';
 
 type NewsData = {

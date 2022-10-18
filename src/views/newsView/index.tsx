@@ -58,7 +58,7 @@ const NewsView = (): ReactElement => {
         <h1 className={styles.title}>News</h1>
       </Container>
       <MainNews newsData={newsData[0]} />
-      <NewsList newsData={newsData} />
+      <NewsList newsData={newsData.splice(1)} />
       <Button text="Load more news" />
     </>
   );
