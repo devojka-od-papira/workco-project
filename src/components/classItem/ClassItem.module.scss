@@ -37,6 +37,10 @@
   height: 332px;
   margin-top: 8px;
   overflow: hidden;
+
+  &:last-child {
+    margin-bottom: 40px;
+  }
 }
 
 .img {

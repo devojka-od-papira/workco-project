@@ -8,32 +8,34 @@ import MenuButton from '../MenuButton';
 import styles from './Header.module.scss';
 import closeIcon from '../../assets/icons/close.svg';
 import hamburgerIcon from '../../assets/icons/hamburger.svg';
+import { ROUTES } from '../../routes';
+
+const menu = [
+  {
+    title: 'home',
+    path: ROUTES.HOME,
+  },
+  {
+    title: 'classes',
+    path: ROUTES.CLASSES,
+  },
+  {
+    title: 'news',
+    path: ROUTES.NEWS,
+  },
+  {
+    title: 'galery',
+    path: ROUTES.GALERY,
+  },
+  {
+    title: 'about us',
+    path: ROUTES.ABOUT_US,
+  },
+];
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const breakpoint = useBreakpoint();
-  const menu = [
-    {
-      title: 'Home',
-      path: '',
-    },
-    {
-      title: 'Classes',
-      path: '',
-    },
-    {
-      title: 'News',
-      path: '',
-    },
-    {
-      title: 'Gallery',
-      path: '',
-    },
-    {
-      title: 'About us',
-      path: '',
-    },
-  ];
   return (
     <header className={cx(styles.header)}>
       <Container>

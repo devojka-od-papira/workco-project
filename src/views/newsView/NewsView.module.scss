@@ -1,0 +1,11 @@
+@import "src/assets/styles/variable";
+@import "src/assets/styles/typography";
+@import "src/assets/styles/layout";
+
+.title {
+  @include h1;
+
+  padding-top: 63px;
+  padding-bottom: 95px;
+  color: $color-blue;
+}

@@ -36,6 +36,10 @@
 .ul {
   line-height: 24px;
 
+  a {
+    color: $color-dark;
+  }
+
   @include breakpoint(mobileOnly) {
     @include container-mobile;
 
@@ -84,4 +88,8 @@
 .menuPosition {
   position: absolute;
   left: 2%;
+}
+
+.underline {
+  text-decoration: underline;
 }

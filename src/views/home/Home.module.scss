@@ -1,0 +1,32 @@
+@import "src/assets/styles/typography";
+@import "src/assets/styles/variable";
+@import "src/assets/styles/layout";
+
+.moreNews {
+  @include h5;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-dark;
+  text-decoration: underline;
+
+  @include breakpoint(desktop) {
+    @include h2;
+
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+.moreNewsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 54px;
+  margin-top: 29px;
+
+  @include breakpoint(desktop) {
+    justify-content: flex-start;
+    margin-top: 41px;
+    margin-bottom: 141px;
+  }
+}

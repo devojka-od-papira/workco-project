@@ -1,0 +1,15 @@
+@import "src/assets/styles/typography";
+@import "src/assets/styles/variable";
+
+.button {
+  @include p;
+
+  border: none;
+  width: 278px;
+  padding: 19px 53px;
+  border-radius: 10px;
+  background-color: $color-blue;
+  color: $color-light;
+  display: flex;
+  margin: 120px auto 154px;
+}
