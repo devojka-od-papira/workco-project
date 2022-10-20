@@ -3,7 +3,7 @@ import { Column, Grid } from 'light-react-grid';
 import Section from '../section';
 import ClassItem from '../classItem';
 import DrawingPainting from '../../assets/images/drawing&painting.jpeg';
-import Sculpture from '../../assets/images/Tuileries.jpeg';
+import Sculpture from '../../assets/images/tuileries.jpeg';
 import Mosaic from '../../assets/images/antonioGaudi.jpeg';
 import Photography from '../../assets/images/photography.jpeg';
 import Graphic from '../../assets/images/linocut.jpeg';

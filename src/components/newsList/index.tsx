@@ -25,9 +25,9 @@ const NewsList: React.FC<NewsListProps> = ({ newsData }) => (
         >
           <NewsItem
             title={newsItem.title}
-            src={newsItem.image.src}
+            src={newsItem.image?.src}
             description={newsItem.description}
-            alt={newsItem.image.alt}
+            alt={newsItem.image?.alt}
           />
         </Column>
       ))}
