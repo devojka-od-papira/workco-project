@@ -17,7 +17,7 @@ interface NewsListProps {
 const NewsList: React.FC<NewsListProps> = ({ newsData }) => (
   <Container>
     <Grid>
-      {newsData?.map((newsItem: NewsData) => (
+      {newsData.map((newsItem: NewsData) => (
         <Column
           className={styles.wrapper}
           size={{ md: 4, lg: 6 }}

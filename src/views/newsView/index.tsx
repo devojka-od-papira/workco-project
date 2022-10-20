@@ -46,7 +46,7 @@ const NewsView = (): ReactElement => {
             description: dataItem.shortText,
             image: {
               src: dataItem.img,
-              alt: `data ${dataItem.title}`,
+              alt: `${dataItem.title}`,
             },
           }));
 
@@ -65,8 +65,8 @@ const NewsView = (): ReactElement => {
       </Container>
       {mainNews && <MainNews newsData={mainNews} />}
       <NewsList newsData={news} />
-      {loadedNews[page + 1] !== undefined && (
-        <Button text="Load more news" loadMoreNews={loadMoreNews} />
+      {loadedNews[page + 1] && (
+        <Button text="Load more news" onClick={loadMoreNews} />
       )}
     </>
   );
