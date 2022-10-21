@@ -3,12 +3,7 @@ import { Column, Grid } from 'light-react-grid';
 import Container from '../../components/container';
 import styles from './NewsList.module.scss';
 import NewsItem from '../newsItem';
-
-type NewsData = {
-  title: string;
-  description: string;
-  image: Image;
-};
+import { NewsData } from '../../types/global';
 
 interface NewsListProps {
   newsData: NewsData[];

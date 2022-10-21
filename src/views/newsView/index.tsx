@@ -4,22 +4,8 @@ import MainNews from '../../components/mainNews';
 import Container from '../../components/container';
 import NewsList from '../../components/newsList';
 import Button from '../../components/button';
-import { chunk } from '../../utils/global';
-
-type NewsData = {
-  title: string;
-  description: string;
-  image: Image;
-};
-
-type DataItem = {
-  img: string;
-  thumbnail: string;
-  title: string;
-  shortText: string;
-  slug: string;
-  text: string;
-};
+import { chunk, mapNewsData } from '../../utils/global';
+import { NewsData } from '../../types/global';
 
 const NewsView = (): ReactElement => {
   const [news, setNews] = useState<NewsData[]>([]);
@@ -40,22 +26,12 @@ const NewsView = (): ReactElement => {
     fetch('api/data.json')
       .then((response) => response.json())
       .then((data) => {
-        if (data.length) {
-          const formattedData = data.map((dataItem: DataItem) => ({
-            title: dataItem.title,
-            description: dataItem.shortText,
-            image: {
-              src: dataItem.img,
-              alt: `${dataItem.title}`,
-            },
-          }));
-
-          setMainNews(formattedData[0]);
-          formattedData.splice(0, 1);
-          const showNews = chunk(formattedData, 4);
-          setLoadedNews(showNews);
-          setNews(showNews[page]);
-        }
+        const formattedData = mapNewsData(data);
+        setMainNews(formattedData[0]);
+        formattedData.splice(0, 1);
+        const showNews = chunk(formattedData, 4);
+        setLoadedNews(showNews);
+        setNews(showNews[page]);
       });
   }, []);
   return (

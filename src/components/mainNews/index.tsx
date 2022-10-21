@@ -1,12 +1,7 @@
 import React from 'react';
 import Container from '../container';
 import styles from './MainNews.module.scss';
-
-type NewsData = {
-  title: string;
-  description: string;
-  image: Image;
-};
+import { NewsData } from '../../types/global';
 
 interface MainNewsProps {
   newsData: NewsData;
