@@ -3,73 +3,45 @@ import { Column, Grid } from 'light-react-grid';
 import Section from '../section';
 import styles from './News.module.scss';
 import NewsItem from '../newsItem';
-import Toronto from '../../assets/images/toronto.jpeg';
-import Mexico from '../../assets/images/mexico.jpeg';
-import AbstractPainter from '../../assets/images/abstract-painter.jpeg';
-import Archeology from '../../assets/images/arh.jpeg';
 
-const News: React.FC = () => {
-  const newsData = [
-    {
-      title: 'Prism of Relations: the 2022 Toronto Biennial',
-      src: Toronto,
-      description:
-        "The biennial's curators asked how land might be an archive, prompting reflections on human conflicts over land as well as visions for alternate relations.",
-      alt: 'Toronto',
-    },
-    {
-      title: "Mexico's Best-Kept Secret Is Zacatecas’s Vibrant Art Scene",
-      src: Mexico,
-      description:
-        "The biennial's curators asked how land might be an archive, prompting reflections on human conflicts over land as well as visions for alternate relations.",
-      alt: 'Mexico',
-    },
-    {
-      title:
-        'Mary Obering, Abstract Painter With a Passionate Following, Dies at 85',
-      src: AbstractPainter,
-      description:
-        "The biennial's curators asked how land might be an archive, prompting reflections on human conflicts over land as well as visions for alternate relations.",
-      alt: 'Abstract painter',
-    },
-    {
-      title:
-        "Archaelogists Discovered 800-Year-Old Ancient Palace That May Have Belonged To Genghis Khan's Grandson",
-      src: Archeology,
-      description:
-        "The biennial's curators asked how land might be an archive, prompting reflections on human conflicts over land as well as visions for alternate relations.",
-      alt: 'Archeology',
-    },
-  ];
-  return (
-    <Section classNames={styles.section} title="News">
-      <Grid>
-        {newsData.map((newsItem) => (
-          <Column
-            className={styles.wrapper}
-            size={{ md: 4, lg: 6 }}
-            key={newsItem.title}
-          >
-            <NewsItem
-              title={newsItem.title}
-              src={newsItem.src}
-              description={newsItem.description}
-              alt={newsItem.alt}
-            />
-          </Column>
-        ))}
-      </Grid>
-      <Grid>
-        <Column size={{ lg: 2 }}>
-          <div className={styles.moreNewsWrapper}>
-            <a className={styles.moreNews} href="https://www.google.com">
-              More news
-            </a>
-          </div>
-        </Column>
-      </Grid>
-    </Section>
-  );
+type NewsData = {
+  title: string;
+  description: string;
+  image: Image;
 };
+
+interface NewsProps {
+  newsData: NewsData[];
+}
+
+const News: React.FC<NewsProps> = ({ newsData }) => (
+  <Section classNames={styles.section} title="News">
+    <Grid>
+      {newsData.map((newsItem) => (
+        <Column
+          className={styles.wrapper}
+          size={{ md: 4, lg: 6 }}
+          key={newsItem.title}
+        >
+          <NewsItem
+            title={newsItem.title}
+            src={newsItem.image.src}
+            description={newsItem.description}
+            alt={newsItem.image.alt}
+          />
+        </Column>
+      ))}
+    </Grid>
+    <Grid>
+      <Column size={{ lg: 2 }}>
+        <div className={styles.moreNewsWrapper}>
+          <a className={styles.moreNews} href="http://localhost:3000/news">
+            More news
+          </a>
+        </div>
+      </Column>
+    </Grid>
+  </Section>
+);
 
 export default News;

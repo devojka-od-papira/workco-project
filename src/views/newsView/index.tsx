@@ -49,7 +49,6 @@ const NewsView = (): ReactElement => {
               alt: `${dataItem.title}`,
             },
           }));
-
           setMainNews(formattedData[0]);
           formattedData.splice(0, 1);
           const showNews = chunk(formattedData, 4);
