@@ -3,18 +3,13 @@ import { Column, Grid } from 'light-react-grid';
 import Section from '../section';
 import styles from './News.module.scss';
 import NewsItem from '../newsItem';
-
-type NewsData = {
-  title: string;
-  description: string;
-  image: Image;
-};
+import { NewsData } from '../../types/global';
 
 interface NewsProps {
   newsData: NewsData[];
 }
 
-const News: React.FC<NewsProps> = ({ newsData }) => (
+const HomeNews: React.FC<NewsProps> = ({ newsData }) => (
   <Section classNames={styles.section} title="News">
     <Grid>
       {newsData.map((newsItem) => (
@@ -35,7 +30,7 @@ const News: React.FC<NewsProps> = ({ newsData }) => (
     <Grid>
       <Column size={{ lg: 2 }}>
         <div className={styles.moreNewsWrapper}>
-          <a className={styles.moreNews} href="http://localhost:3000/news">
+          <a className={styles.moreNews} href="/news">
             More news
           </a>
         </div>
@@ -44,4 +39,4 @@ const News: React.FC<NewsProps> = ({ newsData }) => (
   </Section>
 );
 
-export default News;
+export default HomeNews;
